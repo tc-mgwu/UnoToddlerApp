@@ -19,7 +19,9 @@
 -(void) playFakePhone
 {
 
-
+    CCScene *gameFakePhone = [CCBReader loadAsScene:@"FakePhone"];
+    CCTransition *transition = [CCTransition transitionFadeWithDuration:0.8f];
+    [[CCDirector sharedDirector] presentScene:gameFakePhone withTransition:transition];
 
 }
 @end
