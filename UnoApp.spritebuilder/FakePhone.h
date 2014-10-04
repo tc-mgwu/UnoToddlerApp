@@ -9,5 +9,6 @@
 #import "CCNode.h"
 
 @interface FakePhone : CCNode
+@property (nonatomic, assign) NSInteger counter;
 
 @end
