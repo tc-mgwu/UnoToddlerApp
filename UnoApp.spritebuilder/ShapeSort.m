@@ -67,9 +67,15 @@
     _color8.visible=NO;
     _color9.visible=NO;
     
-    
+    [self startGame];
 }
 
+-(void) didLoadFromCCB
+{
+    //enable user interaction
+    self.userInteractionEnabled = TRUE;
+
+}
 
 -(void) startGame
 {
@@ -84,9 +90,10 @@
 -(void) spawnTriangle
 {
     Triangle *newtraingle=(Triangle*) [CCBReader load:@"Triangle"];
-
-
-
+    
+    newtraingle.positionType = CCPositionTypeNormalized;
+    newtraingle.position=ccp (.5,.5);
+    [self addChild: newtraingle];
 
 }
 @end
