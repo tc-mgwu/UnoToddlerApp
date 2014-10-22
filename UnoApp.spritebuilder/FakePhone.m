@@ -27,7 +27,7 @@
     UnoColor *_color8;
     UnoColor *_color9;
     
-    NSArray *phonenumber;
+    NSArray *_phonenumber;
 }
 
 -(void) onEnter
@@ -62,7 +62,7 @@
 
 -(void) storePhoneNumber
 {
-    if ([phonenumber count]> 9 )
+    if ([_phonenumber count]> 9 )
     {
         //DISPLAY PRESS CALL!
     }

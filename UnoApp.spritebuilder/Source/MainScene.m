@@ -24,4 +24,13 @@
     [[CCDirector sharedDirector] presentScene:gameFakePhone withTransition:transition];
 
 }
+
+-(void) playShapeSort
+{
+    
+    CCScene *gameShapeSort = [CCBReader loadAsScene:@"ShapeSort"];
+    CCTransition *transition = [CCTransition transitionFadeWithDuration:0.8f];
+    [[CCDirector sharedDirector] presentScene:gameShapeSort withTransition:transition];
+    
+}
 @end

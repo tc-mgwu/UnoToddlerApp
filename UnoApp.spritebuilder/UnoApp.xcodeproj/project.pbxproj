@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
+		A5B64CFA19F74261006F0A58 /* ShapeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B64CF919F74261006F0A58 /* ShapeSort.m */; };
+		A5B64D0019F74791006F0A58 /* Triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B64CFF19F74791006F0A58 /* Triangle.m */; };
+		A5B64D0319F747A6006F0A58 /* TriangleHole.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B64D0219F747A6006F0A58 /* TriangleHole.m */; };
 		A5C3D80F19A970E30062BD00 /* GameColorMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C3D80E19A970E30062BD00 /* GameColorMatch.m */; };
 		A5C3D81319AA7A5F0062BD00 /* UnoColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C3D81219AA7A5F0062BD00 /* UnoColor.m */; };
 		A5CF50BD19DB771F000B71B0 /* FakePhone.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CF50BC19DB771F000B71B0 /* FakePhone.m */; };
@@ -61,6 +64,12 @@
 
 /* Begin PBXFileReference section */
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		A5B64CF819F74261006F0A58 /* ShapeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeSort.h; sourceTree = "<group>"; };
+		A5B64CF919F74261006F0A58 /* ShapeSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeSort.m; sourceTree = "<group>"; };
+		A5B64CFE19F74791006F0A58 /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
+		A5B64CFF19F74791006F0A58 /* Triangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Triangle.m; sourceTree = "<group>"; };
+		A5B64D0119F747A6006F0A58 /* TriangleHole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleHole.h; sourceTree = "<group>"; };
+		A5B64D0219F747A6006F0A58 /* TriangleHole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TriangleHole.m; sourceTree = "<group>"; };
 		A5C3D80D19A970E30062BD00 /* GameColorMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameColorMatch.h; sourceTree = "<group>"; };
 		A5C3D80E19A970E30062BD00 /* GameColorMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameColorMatch.m; sourceTree = "<group>"; };
 		A5C3D81119AA7A5F0062BD00 /* UnoColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnoColor.h; sourceTree = "<group>"; };
@@ -145,6 +154,12 @@
 				A5C3D80E19A970E30062BD00 /* GameColorMatch.m */,
 				A5CF50BB19DB771F000B71B0 /* FakePhone.h */,
 				A5CF50BC19DB771F000B71B0 /* FakePhone.m */,
+				A5B64CF819F74261006F0A58 /* ShapeSort.h */,
+				A5B64CF919F74261006F0A58 /* ShapeSort.m */,
+				A5B64CFE19F74791006F0A58 /* Triangle.h */,
+				A5B64CFF19F74791006F0A58 /* Triangle.m */,
+				A5B64D0119F747A6006F0A58 /* TriangleHole.h */,
+				A5B64D0219F747A6006F0A58 /* TriangleHole.m */,
 				A5D23F5219ABF15600B8B73D /* UnoFace.h */,
 				A5D23F5319ABF15600B8B73D /* UnoFace.m */,
 				A5C3D81119AA7A5F0062BD00 /* UnoColor.h */,
@@ -267,7 +282,7 @@
 		B77F1B2617B978D7009739AE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Apportable;
 				TargetAttributes = {
 					B77F1B2D17B978D7009739AE = {
@@ -362,11 +377,14 @@
 			files = (
 				A5C3D80F19A970E30062BD00 /* GameColorMatch.m in Sources */,
 				A5D23F5419ABF15600B8B73D /* UnoFace.m in Sources */,
+				A5B64D0019F74791006F0A58 /* Triangle.m in Sources */,
 				A5CF50BD19DB771F000B71B0 /* FakePhone.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				A5B64D0319F747A6006F0A58 /* TriangleHole.m in Sources */,
 				A5C3D81319AA7A5F0062BD00 /* UnoColor.m in Sources */,
+				A5B64CFA19F74261006F0A58 /* ShapeSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,8 +402,15 @@
 		B77F1CDC17B978D8009739AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -394,9 +419,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -405,15 +435,26 @@
 		B77F1CDD17B978D8009739AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					NDEBUG,
 					"NS_BLOCK_ASSERTIONS=1",
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				SDKROOT = iphoneos;
@@ -425,7 +466,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -459,7 +499,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
