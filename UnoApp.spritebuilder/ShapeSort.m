@@ -85,7 +85,17 @@
 
 }
 
-
+//-(void)update:(CCTime)delta
+//{
+//    CGFloat topEdgePosition = CGRectGetMaxY(_contentNode.boundingBox);
+//    CGFloat rightEdgePosition = CGRectGetMaxX(_contentNode.boundingBox);
+//    CGFloat leftEdgePosition = CGRectGetMinX(_contentNode.boundingBox);
+//
+//
+//
+//
+//
+//}
 
 -(void) spawnTriangle
 {
@@ -96,4 +106,7 @@
     [self addChild: newtraingle];
 
 }
+
+
+
 @end

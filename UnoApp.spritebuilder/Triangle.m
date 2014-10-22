@@ -10,4 +10,20 @@
 
 @implementation Triangle
 
+
+
+- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    CGPoint touchLocation = [touch locationInNode:self];
+    // create a 'hero' sprite
+    self.position = touchLocation;
+    CCLOG(@"Received a touch");
+}
+
+
+- (void)touchMoved:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    CGPoint touchLocation = [touch locationInNode:self];
+    self.position = touchLocation;
+}
 @end
