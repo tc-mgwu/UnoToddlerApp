@@ -8,6 +8,6 @@
 
 #import "CCNode.h"
 
-@interface Triangle : CCNode
+@interface Triangle : CCSprite
 
 @end

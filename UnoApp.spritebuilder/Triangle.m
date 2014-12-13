@@ -10,9 +10,30 @@
 
 @implementation Triangle
 
+{
+    
+    CGPoint startTouch;
+    CGPoint endTouch;
 
 
-- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+}
+
+- (id)init
+{
+    self = [super init];
+    
+    return self;
+}
+
+- (void) onEnter                    //onenter= on screen
+{
+    [super onEnter];
+    self.userInteractionEnabled = TRUE;
+    //    self.scale=.8;
+}
+
+
+- (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event
 {
     CGPoint touchLocation = [touch locationInNode:self];
     // create a 'hero' sprite
@@ -21,7 +42,7 @@
 }
 
 
-- (void)touchMoved:(UITouch *)touch withEvent:(UIEvent *)event
+- (void)touchMoved:(CCTouch *)touch withEvent:(CCTouchEvent *)event
 {
     CGPoint touchLocation = [touch locationInNode:self];
     self.position = touchLocation;
