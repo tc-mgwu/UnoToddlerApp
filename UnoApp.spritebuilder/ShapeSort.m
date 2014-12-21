@@ -38,6 +38,8 @@
     
     NSArray *_allShapePositions;
     //arrary to hold shape positions
+    
+    CCSprite *currentShape;
 }
 
 -(void) onEnter
@@ -99,14 +101,34 @@
 
 -(void) spawnTriangle
 {
-    Triangle *newtraingle=(Triangle*) [CCBReader load:@"Triangle"];
+    Triangle *newtriangle=(Triangle*) [CCBReader load:@"Triangle"];
+    currentShape= newtriangle;
+    newtriangle.positionType = CCPositionTypeNormalized;
+//    newtraingle.position=ccp (.5,.5);
+    [self addChild: newtriangle];
     
-    newtraingle.positionType = CCPositionTypeNormalized;
-    newtraingle.position=ccp (.5,.5);
-    [self addChild: newtraingle];
+    _aTriangle=TRUE;
 
 }
 
+- (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+{
 
+}
+
+- (void)touchMoved:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+{
+    CGPoint touchLocation = [touch locationInNode:_contentNode];
+    if (CGRectContainsPoint([currentShape boundingBox], touchLocation))
+    {
+        currentShape.positionInPoints=touchLocation;
+        //positionInPoints works, but .position does not
+    }
+
+}
+-(void) touchEnded:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+{
+
+}
 
 @end

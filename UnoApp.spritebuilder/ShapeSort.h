@@ -10,5 +10,5 @@
 #import "CCNode.h"
 
 @interface ShapeSort : CCNode
-
+@property (nonatomic, assign) BOOL aTriangle;
 @end

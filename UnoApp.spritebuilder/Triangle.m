@@ -14,7 +14,7 @@
     
     CGPoint startTouch;
     CGPoint endTouch;
-
+    CGPoint lastTouch;
 
 }
 
@@ -33,18 +33,23 @@
 }
 
 
-- (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event
-{
-    CGPoint touchLocation = [touch locationInNode:self];
-    // create a 'hero' sprite
-    self.position = touchLocation;
-    CCLOG(@"Received a touch");
-}
-
-
-- (void)touchMoved:(CCTouch *)touch withEvent:(CCTouchEvent *)event
-{
-    CGPoint touchLocation = [touch locationInNode:self];
-    self.position = touchLocation;
-}
+//- (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+//{
+////    CGPoint touchLocation = [touch locationInNode:self];
+////    self.position = touchLocation;
+//    CCLOG(@"Received a touch");
+//}
+//
+//
+//- (void)touchMoved:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+//{
+//    CGPoint touchLocation = [touch locationInNode:self];
+//    self.position = touchLocation;
+////    lastTouch=touchLocation;
+//}
+//
+//-(void) touchEnded:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+//{
+////    self.position = lastTouch;
+//}
 @end
