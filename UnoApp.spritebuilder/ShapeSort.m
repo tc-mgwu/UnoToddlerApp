@@ -40,6 +40,7 @@
     //arrary to hold shape positions
     
     CCSprite *currentShape;
+    TriangleHole *_triHole;
 }
 
 -(void) onEnter
@@ -69,6 +70,12 @@
     _color8.visible=NO;
     _color9.visible=NO;
     
+    //spawn shape holes here
+    TriangleHole *triHole=(TriangleHole*) [CCBReader load:@"TriangleHole"];
+    triHole.positionType = CCPositionTypeNormalized;
+    triHole.position= ccp (.5,.5);
+    [self addChild: triHole];
+    
     [self startGame];
 }
 
@@ -84,33 +91,37 @@
 
     [self spawnTriangle];
     
-
 }
 
-//-(void)update:(CCTime)delta
-//{
-//    CGFloat topEdgePosition = CGRectGetMaxY(_contentNode.boundingBox);
-//    CGFloat rightEdgePosition = CGRectGetMaxX(_contentNode.boundingBox);
-//    CGFloat leftEdgePosition = CGRectGetMinX(_contentNode.boundingBox);
-//
-//
-//
-//
-//
-//}
+-(void) update:(CCTime)delta
+{
+    //if bool for a triangle is true
+    //and if bounding box for current shape (which is a triangle) intersects with triangle hole bounding box
+    //win condition- "correct" displays
+    
+    if (_aTriangle==TRUE)
+    {
+        if (CGRectIntersectsRect(currentShape.boundingBox, _triHole.boundingBox))
+        {
+            CCLOG(@"correct");
+        }
+    }
+}
 
+//shape spawners
 -(void) spawnTriangle
 {
     Triangle *newtriangle=(Triangle*) [CCBReader load:@"Triangle"];
     currentShape= newtriangle;
     newtriangle.positionType = CCPositionTypeNormalized;
-//    newtraingle.position=ccp (.5,.5);
     [self addChild: newtriangle];
     
     _aTriangle=TRUE;
 
 }
 
+
+//touch methods
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event
 {
 
@@ -126,6 +137,7 @@
     }
 
 }
+
 -(void) touchEnded:(CCTouch *)touch withEvent:(CCTouchEvent *)event
 {
 
