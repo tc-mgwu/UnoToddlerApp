@@ -7,7 +7,7 @@
 //
 
 #import "CCNode.h"
-
-@interface Triangle : CCSprite
+#import "Shapes.h"
+@interface Triangle : Shapes
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
+		A55DB1181A5F36D60033B9C9 /* Shapes.m in Sources */ = {isa = PBXBuildFile; fileRef = A55DB1171A5F36D60033B9C9 /* Shapes.m */; };
 		A5B64CFA19F74261006F0A58 /* ShapeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B64CF919F74261006F0A58 /* ShapeSort.m */; };
 		A5B64D0019F74791006F0A58 /* Triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B64CFF19F74791006F0A58 /* Triangle.m */; };
 		A5B64D0319F747A6006F0A58 /* TriangleHole.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B64D0219F747A6006F0A58 /* TriangleHole.m */; };
@@ -46,6 +47,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A55DB11D1A5F36D60033B9C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2FEB74F194F6C9E00FC0574;
+			remoteInfo = cocos2dAndroid;
+		};
+		A55DB11F1A5F36D60033B9C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BF3267A195F8D8800D9A51A;
+			remoteInfo = cocos2dJava;
+		};
+		A55DB1211A5F36D60033B9C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A4037A819E37038007B6E8F;
+			remoteInfo = "cocos2d-mac";
+		};
 		B737894A180761A90076A88C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
@@ -64,6 +86,8 @@
 
 /* Begin PBXFileReference section */
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		A55DB1161A5F36D60033B9C9 /* Shapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shapes.h; sourceTree = "<group>"; };
+		A55DB1171A5F36D60033B9C9 /* Shapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shapes.m; sourceTree = "<group>"; };
 		A5B64CF819F74261006F0A58 /* ShapeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeSort.h; sourceTree = "<group>"; };
 		A5B64CF919F74261006F0A58 /* ShapeSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShapeSort.m; sourceTree = "<group>"; };
 		A5B64CFE19F74791006F0A58 /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
@@ -156,6 +180,8 @@
 				A5CF50BC19DB771F000B71B0 /* FakePhone.m */,
 				A5B64CF819F74261006F0A58 /* ShapeSort.h */,
 				A5B64CF919F74261006F0A58 /* ShapeSort.m */,
+				A55DB1161A5F36D60033B9C9 /* Shapes.h */,
+				A55DB1171A5F36D60033B9C9 /* Shapes.m */,
 				A5B64CFE19F74791006F0A58 /* Triangle.h */,
 				A5B64CFF19F74791006F0A58 /* Triangle.m */,
 				A5B64D0119F747A6006F0A58 /* TriangleHole.h */,
@@ -172,6 +198,9 @@
 			isa = PBXGroup;
 			children = (
 				B737894B180761A90076A88C /* libcocos2d.a */,
+				A55DB11E1A5F36D60033B9C9 /* libcocos2dAndroid.a */,
+				A55DB1201A5F36D60033B9C9 /* cocos2dJava.jar */,
+				A55DB1221A5F36D60033B9C9 /* libcocos2d-mac.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -319,6 +348,27 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		A55DB11E1A5F36D60033B9C9 /* libcocos2dAndroid.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcocos2dAndroid.a;
+			remoteRef = A55DB11D1A5F36D60033B9C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A55DB1201A5F36D60033B9C9 /* cocos2dJava.jar */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.jar;
+			path = cocos2dJava.jar;
+			remoteRef = A55DB11F1A5F36D60033B9C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A55DB1221A5F36D60033B9C9 /* libcocos2d-mac.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libcocos2d-mac.a";
+			remoteRef = A55DB1211A5F36D60033B9C9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		B737894B180761A90076A88C /* libcocos2d.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -376,6 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5C3D80F19A970E30062BD00 /* GameColorMatch.m in Sources */,
+				A55DB1181A5F36D60033B9C9 /* Shapes.m in Sources */,
 				A5D23F5419ABF15600B8B73D /* UnoFace.m in Sources */,
 				A5B64D0019F74791006F0A58 /* Triangle.m in Sources */,
 				A5CF50BD19DB771F000B71B0 /* FakePhone.m in Sources */,

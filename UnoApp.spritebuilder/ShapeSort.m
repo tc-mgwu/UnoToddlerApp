@@ -11,6 +11,7 @@
 #import "UnoFace.h"
 #import "Triangle.h"
 #import "TriangleHole.h"
+#import "Shapes.h"
 
 @implementation ShapeSort
 {
@@ -30,7 +31,7 @@
     UnoColor *_color9;
     
    
-    NSArray *_allShapes;
+//    NSArray *_allShapes;
     //array to hold all shapes
     
     NSArray *_allShapeHoles;
@@ -38,6 +39,9 @@
     
     NSArray *_allShapePositions;
     //arrary to hold shape positions
+    
+    NSMutableArray *_allShapes;
+    
     
     CCSprite *currentShape;
     TriangleHole *_triHole;
@@ -71,10 +75,11 @@
     _color9.visible=NO;
     
     //spawn shape holes here
+  
     TriangleHole *triHole=(TriangleHole*) [CCBReader load:@"TriangleHole"];
     triHole.positionType = CCPositionTypeNormalized;
-    triHole.position= ccp (.5,.5);
-    [self addChild: triHole];
+    triHole.position= ccp(.5, .5);
+    [_contentNode addChild: triHole];
     
     [self startGame];
 }
@@ -84,6 +89,7 @@
     //enable user interaction
     self.userInteractionEnabled = TRUE;
 
+    _allShapes = [NSMutableArray array];
 }
 
 -(void) startGame
@@ -98,14 +104,19 @@
     //if bool for a triangle is true
     //and if bounding box for current shape (which is a triangle) intersects with triangle hole bounding box
     //win condition- "correct" displays
-    
-    if (_aTriangle==TRUE)
+    for (Shapes *newtriangle in _allShapes)
     {
-        if (CGRectIntersectsRect(currentShape.boundingBox, _triHole.boundingBox))
+        
+        if (_aTriangle)
         {
-            CCLOG(@"correct");
+            if (CGRectIntersectsRect(newtriangle.boundingBox, _triHole.boundingBox))
+            {
+                newtriangle.visible=NO;
+            }
         }
+        
     }
+
 }
 
 //shape spawners
@@ -114,8 +125,8 @@
     Triangle *newtriangle=(Triangle*) [CCBReader load:@"Triangle"];
     currentShape= newtriangle;
     newtriangle.positionType = CCPositionTypeNormalized;
-    [self addChild: newtriangle];
-    
+    [_contentNode addChild: newtriangle];
+    [_allShapes addObject:currentShape];
     _aTriangle=TRUE;
 
 }
