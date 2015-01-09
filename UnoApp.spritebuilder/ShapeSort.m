@@ -43,7 +43,7 @@
     NSMutableArray *_allShapes;
     
     
-    CCSprite *currentShape;
+    CCSprite *_currentShape;
     TriangleHole *_triHole;
 }
 
@@ -106,12 +106,12 @@
     //win condition- "correct" displays
     for (Shapes *newtriangle in _allShapes)
     {
-        
+    
         if (_aTriangle)
         {
-            if (CGRectIntersectsRect(newtriangle.boundingBox, _triHole.boundingBox))
+            if (CGRectIntersectsRect(_currentShape.boundingBox, _triHole.boundingBox))
             {
-                newtriangle.visible=NO;
+                _currentShape.visible=NO;
             }
         }
         
@@ -123,11 +123,15 @@
 -(void) spawnTriangle
 {
     Triangle *newtriangle=(Triangle*) [CCBReader load:@"Triangle"];
-    currentShape= newtriangle;
+    newtriangle.position= ccp(.5, .3);
+    _currentShape= newtriangle;
+    
+
     newtriangle.positionType = CCPositionTypeNormalized;
     [_contentNode addChild: newtriangle];
-    [_allShapes addObject:currentShape];
+    [_allShapes addObject: _currentShape];
     _aTriangle=TRUE;
+   
 
 }
 
@@ -141,9 +145,9 @@
 - (void)touchMoved:(CCTouch *)touch withEvent:(CCTouchEvent *)event
 {
     CGPoint touchLocation = [touch locationInNode:_contentNode];
-    if (CGRectContainsPoint([currentShape boundingBox], touchLocation))
+    if (CGRectContainsPoint([_currentShape boundingBox], touchLocation))
     {
-        currentShape.positionInPoints=touchLocation;
+        _currentShape.positionInPoints=touchLocation;
         //positionInPoints works, but .position does not
     }
 
