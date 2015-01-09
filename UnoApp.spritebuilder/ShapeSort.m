@@ -43,7 +43,7 @@
     NSMutableArray *_allShapes;
     
     
-    CCSprite *_currentShape;
+    Shapes *_currentShape;
     TriangleHole *_triHole;
 }
 
@@ -80,6 +80,7 @@
     triHole.positionType = CCPositionTypeNormalized;
     triHole.position= ccp(.5, .5);
     [_contentNode addChild: triHole];
+    _triHole=triHole;
     
     [self startGame];
 }
@@ -104,18 +105,19 @@
     //if bool for a triangle is true
     //and if bounding box for current shape (which is a triangle) intersects with triangle hole bounding box
     //win condition- "correct" displays
-    for (Shapes *newtriangle in _allShapes)
-    {
+//    for (Shapes *_currentShape in _allShapes)
+//    {
     
         if (_aTriangle)
         {
             if (CGRectIntersectsRect(_currentShape.boundingBox, _triHole.boundingBox))
             {
+                CCLOG(@"Correct");
                 _currentShape.visible=NO;
             }
         }
         
-    }
+//    }
 
 }
 
@@ -123,12 +125,12 @@
 -(void) spawnTriangle
 {
     Triangle *newtriangle=(Triangle*) [CCBReader load:@"Triangle"];
-    newtriangle.position= ccp(.5, .3);
-    _currentShape= newtriangle;
-    
-
     newtriangle.positionType = CCPositionTypeNormalized;
+    newtriangle.position= ccp(.5, .3);
+
     [_contentNode addChild: newtriangle];
+    _currentShape = newtriangle;   
+
     [_allShapes addObject: _currentShape];
     _aTriangle=TRUE;
    
