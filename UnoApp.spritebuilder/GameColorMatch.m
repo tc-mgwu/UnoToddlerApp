@@ -30,6 +30,8 @@
     UnoColor *_color8;
     UnoColor *_color9;
     
+    OALSimpleAudio *AudioPlayer;
+    id<ALSoundSource> _Gamecaf;
 
     NSArray *_allColors;
     
@@ -66,6 +68,10 @@
     _color9.visible=NO;
     _allColors= @[_color1,_color2,_color3,_color4,_color5,_color6,_color7,_color8,_color9];
    
+    AudioPlayer = [OALSimpleAudio sharedInstance];
+    [AudioPlayer preloadEffect:@"Published-iOS/Audio/thatsright.caf"];
+
+
 
 }
 
@@ -229,7 +235,10 @@
     {
         CCLOG(@"Teal~Correct!");
         [self changeColor];
+        
+        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
 
+      
     }
     else
     {
@@ -246,6 +255,7 @@
     {
         CCLOG(@"Orange~Correct!");
         [self changeColor];
+        
     }
     else
     {
@@ -262,6 +272,7 @@
     {
         CCLOG(@"Yellow~Correct!");
         [self changeColor];
+       
 
     }
     else
