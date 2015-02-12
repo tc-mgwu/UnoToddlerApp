@@ -78,8 +78,17 @@
 			<key>previewFolderHidden</key>
 			<true/>
 		</dict>
+		<key>Animals</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
 		<key>Assets</key>
 		<dict>
+			<key>isDirty</key>
+			<true/>
 			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>
@@ -90,8 +99,6 @@
 		</dict>
 		<key>Buttons</key>
 		<dict>
-			<key>isDirty</key>
-			<true/>
 			<key>isSmartSpriteSheet</key>
 			<true/>
 		</dict>

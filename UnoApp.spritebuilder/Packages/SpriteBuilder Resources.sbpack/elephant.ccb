@@ -57,7 +57,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>Animals/lion1.png</string>
+								<string>Animals/elephant1.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -70,12 +70,12 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.1666666716337204</real>
+							<real>0.20000000298023224</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>Animals/lion2.png</string>
+								<string>Animals/elephant2.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -88,12 +88,12 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.36666667461395264</real>
+							<real>0.40000000596046448</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>Animals/lion3.png</string>
+								<string>Animals/elephant3.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -106,12 +106,12 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.56666666269302368</real>
+							<real>0.60000002384185791</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>Animals/lion4.png</string>
+								<string>Animals/elephant4.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -124,12 +124,12 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.76666665077209473</real>
+							<real>0.80000001192092896</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>Animals/lion3.png</string>
+								<string>Animals/elephant3.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -142,12 +142,12 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.96666663885116577</real>
+							<real>1</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>Animals/lion2.png</string>
+								<string>Animals/elephant2.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -165,7 +165,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>Animals/lion1.png</string>
+								<string>Animals/elephant1.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -240,7 +240,7 @@
 			<dict>
 				<key>baseValue</key>
 				<array>
-					<string>Assets/lion1.png</string>
+					<string>Assets/elephant1.png</string>
 					<string>Use regular file</string>
 				</array>
 				<key>name</key>
@@ -250,7 +250,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>Animals/lion1.png</string>
+					<string>Animals/elephant1.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -343,11 +343,11 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.066666670143604279</real>
+			<real>0.66666668653488159</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
-			<real>184.23313903808594</real>
+			<real>217.03511047363281</real>
 			<key>sequenceId</key>
 			<integer>0</integer>
 			<key>soundChannel</key>

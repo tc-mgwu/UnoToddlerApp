@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
+		A53C52FE1A8D54F600E3191B /* AnimalZoo.m in Sources */ = {isa = PBXBuildFile; fileRef = A53C52FD1A8D54F600E3191B /* AnimalZoo.m */; };
 		A55DB1181A5F36D60033B9C9 /* Shapes.m in Sources */ = {isa = PBXBuildFile; fileRef = A55DB1171A5F36D60033B9C9 /* Shapes.m */; };
 		A5B64CFA19F74261006F0A58 /* ShapeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B64CF919F74261006F0A58 /* ShapeSort.m */; };
 		A5B64D0019F74791006F0A58 /* Triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B64CFF19F74791006F0A58 /* Triangle.m */; };
@@ -86,6 +87,8 @@
 
 /* Begin PBXFileReference section */
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		A53C52FC1A8D54F600E3191B /* AnimalZoo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalZoo.h; sourceTree = "<group>"; };
+		A53C52FD1A8D54F600E3191B /* AnimalZoo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalZoo.m; sourceTree = "<group>"; };
 		A55DB1161A5F36D60033B9C9 /* Shapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shapes.h; sourceTree = "<group>"; };
 		A55DB1171A5F36D60033B9C9 /* Shapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shapes.m; sourceTree = "<group>"; };
 		A5B64CF819F74261006F0A58 /* ShapeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShapeSort.h; sourceTree = "<group>"; };
@@ -174,6 +177,8 @@
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				B7378992180767190076A88C /* MainScene.h */,
 				B7378993180767190076A88C /* MainScene.m */,
+				A53C52FC1A8D54F600E3191B /* AnimalZoo.h */,
+				A53C52FD1A8D54F600E3191B /* AnimalZoo.m */,
 				A5C3D80D19A970E30062BD00 /* GameColorMatch.h */,
 				A5C3D80E19A970E30062BD00 /* GameColorMatch.m */,
 				A5CF50BB19DB771F000B71B0 /* FakePhone.h */,
@@ -433,6 +438,7 @@
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				A53C52FE1A8D54F600E3191B /* AnimalZoo.m in Sources */,
 				A5B64D0319F747A6006F0A58 /* TriangleHole.m in Sources */,
 				A5C3D81319AA7A5F0062BD00 /* UnoColor.m in Sources */,
 				A5B64CFA19F74261006F0A58 /* ShapeSort.m in Sources */,
