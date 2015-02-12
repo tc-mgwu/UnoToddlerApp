@@ -250,7 +250,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>Assets/lion4.png</string>
+					<string>Assets/lion3.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -343,7 +343,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.73333334922790527</real>
+			<real>0.1666666716337204</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
