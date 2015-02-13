@@ -71,7 +71,7 @@
     AudioPlayer = [OALSimpleAudio sharedInstance];
     [AudioPlayer preloadEffect:@"Published-iOS/Audio/thatsright.caf"];
 
-
+    
 
 }
 
@@ -234,13 +234,17 @@
     if (_currentColor==_color1)
     {
         CCLOG(@"Teal~Correct!");
-        [self changeColor];
-        
+     
         [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
-
-      
+        [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
+        float delay = 1;
+        [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
+        
     }
+   
+    
     else
+        
     {
         CCLOG(@"Try again!");
     }
@@ -254,7 +258,13 @@
     if (_currentColor==_color2)
     {
         CCLOG(@"Orange~Correct!");
-        [self changeColor];
+        
+        
+        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
+        float delay = 1;
+        [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
+         [_currentFace.animationManager runAnimationsForSequenceNamed:@"Default Timeline"];
         
     }
     else
@@ -271,7 +281,12 @@
     if (_currentColor==_color3)
     {
         CCLOG(@"Yellow~Correct!");
-        [self changeColor];
+        
+        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
+        float delay = 1;
+        [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
+       
        
 
     }
@@ -288,7 +303,12 @@
     if (_currentColor==_color4)
     {
         CCLOG(@"Green~Correct!");
-        [self changeColor];
+        
+        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
+        float delay = 1;
+        [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
+      
 
     }
     else
@@ -305,7 +325,12 @@
     if (_currentColor==_color5)
     {
         CCLOG(@"Magenta~Correct!");
-        [self changeColor];
+        
+        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
+        float delay = 1;
+        [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
+       
         
     }
     else
@@ -320,7 +345,12 @@
     if (_currentColor==_color6)
     {
         CCLOG(@"Purple, correct!");
-        [self changeColor];
+        
+        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
+        float delay = 1;
+        [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
+       
     }
     else
     {
@@ -334,7 +364,12 @@
     if (_currentColor==_color7)
     {
         CCLOG(@"blue, correct!");
-        [self changeColor];
+        
+        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
+        float delay = 1;
+        [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
+        
     }
     else
     {
@@ -348,7 +383,12 @@
     if (_currentColor==_color8)
     {
         CCLOG(@"pink, correct!");
-        [self changeColor];
+        
+        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
+        float delay = 1;
+        [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
+       
     }
     else
     {
@@ -361,7 +401,12 @@
     if (_currentColor==_color9)
     {
         CCLOG(@"red, correct!");
-        [self changeColor];
+        
+        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
+        float delay = 1;
+        [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
+        
     }
     else
     {
