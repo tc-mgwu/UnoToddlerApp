@@ -237,7 +237,7 @@
      
         [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
         [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
-        float delay = 1;
+        float delay = 1.5;
         [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
         
     }
