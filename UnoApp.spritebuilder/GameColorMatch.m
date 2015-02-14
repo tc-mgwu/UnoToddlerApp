@@ -235,7 +235,7 @@
     {
         CCLOG(@"Teal~Correct!");
      
-        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [AudioPlayer playEffect:@"Published-iOS/Audio/Teal.caf"];
         [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
         float delay = 1.5;
         [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
@@ -260,7 +260,7 @@
         CCLOG(@"Orange~Correct!");
         
         
-        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [AudioPlayer playEffect:@"Published-iOS/Audio/Orange.caf"];
         [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
         float delay = 1;
         [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
@@ -282,7 +282,7 @@
     {
         CCLOG(@"Yellow~Correct!");
         
-        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [AudioPlayer playEffect:@"Published-iOS/Audio/Yellow.caf"];
         [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
         float delay = 1;
         [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
@@ -304,7 +304,7 @@
     {
         CCLOG(@"Green~Correct!");
         
-        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [AudioPlayer playEffect:@"Published-iOS/Audio/Green.caf"];
         [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
         float delay = 1;
         [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
@@ -326,7 +326,7 @@
     {
         CCLOG(@"Magenta~Correct!");
         
-        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [AudioPlayer playEffect:@"Published-iOS/Audio/Magenta.caf"];
         [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
         float delay = 1;
         [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
@@ -346,7 +346,7 @@
     {
         CCLOG(@"Purple, correct!");
         
-        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [AudioPlayer playEffect:@"Published-iOS/Audio/Purple.caf"];
         [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
         float delay = 1;
         [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
@@ -365,7 +365,7 @@
     {
         CCLOG(@"blue, correct!");
         
-        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [AudioPlayer playEffect:@"Published-iOS/Audio/Blue.caf"];
         [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
         float delay = 1;
         [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
@@ -384,7 +384,7 @@
     {
         CCLOG(@"pink, correct!");
         
-        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [AudioPlayer playEffect:@"Published-iOS/Audio/Pink.caf"];
         [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
         float delay = 1;
         [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
@@ -402,7 +402,7 @@
     {
         CCLOG(@"red, correct!");
         
-        [AudioPlayer playEffect:@"Published-iOS/Audio/thatsright.caf"];
+        [AudioPlayer playEffect:@"Published-iOS/Audio/Red.caf"];
         [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
         float delay = 1;
         [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
