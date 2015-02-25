@@ -52,10 +52,11 @@
     
     Triangle *_currentTriangle;
     Square *_currentSquare;
-    TriangleHole *_triHole;
+    Circle *_currentCircle;
     
-    CircleHole *_circleHole;
+    TriangleHole *_triHole;
     SquareHole *_squareHole;
+    CircleHole *_circleHole;
     StarHole *_starHole;
 }
 
@@ -91,16 +92,30 @@
     TriangleHole *triHole=(TriangleHole*) [CCBReader load:@"TriangleHole"];
     triHole.positionType = CCPositionTypeNormalized;
     triHole.position= ccp(.5, .5);
+    triHole.opacity= .5;
+    triHole.scale= 1.2;
     [_contentNode addChild: triHole];
     _triHole=triHole;
-    triHole.scale= 1.2;
+  
     
     SquareHole *squareHole=(SquareHole*) [CCBReader load:@"SquareHole"];
     squareHole.positionType = CCPositionTypeNormalized;
     squareHole.position= ccp(.8, .5);
+    squareHole.scale= 1.2;
+    squareHole.opacity= .5;
     [_contentNode addChild: squareHole];
     _squareHole=squareHole;
-    squareHole.scale= 1.2;
+   
+    
+    
+    CircleHole *circleHole=(CircleHole*) [CCBReader load:@"CircleHole"];
+    circleHole.positionType = CCPositionTypeNormalized;
+    circleHole.position= ccp(.2, .5);
+    circleHole.scale= 1.2;
+    circleHole.opacity= .5;
+    [_contentNode addChild: circleHole];
+    _circleHole=circleHole;
+    
     
     [self startGame];
 }
@@ -184,6 +199,20 @@
     
 }
 
+-(void) spawnCircle
+{
+    Circle *newCircle=(Circle*) [CCBReader load:@"Circle"];
+    newCircle.positionType = CCPositionTypeNormalized;
+    newCircle.position= ccp(.7, .3);
+    
+    [_contentNode addChild: newCircle];
+    _currentCircle = newCircle;
+    
+    [_allShapes addObject: _currentCircle];
+    _aCircle=TRUE;
+    
+    
+}
 
 
 //touch methods- moved into shapes class

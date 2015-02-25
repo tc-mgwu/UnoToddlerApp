@@ -12,5 +12,7 @@
 @interface ShapeSort : CCNode
 @property (nonatomic, assign) BOOL aTriangle;
 @property (nonatomic, assign) BOOL aSquare;
+@property (nonatomic, assign) BOOL aCircle;
+
 
 @end
