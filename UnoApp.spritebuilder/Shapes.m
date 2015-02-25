@@ -9,5 +9,26 @@
 #import "Shapes.h"
 
 @implementation Shapes
+{
+    
+    CGPoint startTouch;
+    CGPoint endTouch;
+    CGPoint lastTouch;
+    
+}
+
+- (id)init
+{
+    self = [super init];
+    
+    return self;
+}
+
+- (void) onEnter                    //onenter= on screen
+{
+    [super onEnter];
+    self.userInteractionEnabled = TRUE;
+    //    self.scale=.8;
+}
 
 @end

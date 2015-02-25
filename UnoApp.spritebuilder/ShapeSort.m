@@ -11,8 +11,14 @@
 #import "UnoFace.h"
 #import "Triangle.h"
 #import "TriangleHole.h"
+#import "Circle.h"
+#import "CircleHole.h"
+#import "Square.h"
+#import "SquareHole.h"
+#import "Star.h"
+#import "StarHole.h"
 #import "Shapes.h"
-//#import "CCBReader.h"
+#import "CCBReader.h"
 
 @implementation ShapeSort
 {
@@ -46,6 +52,9 @@
     
     Shapes *_currentShape;
     TriangleHole *_triHole;
+    CircleHole *_circleHole;
+    SquareHole *_squareHole;
+    StarHole *_starHole;
 }
 
 -(void) onEnter
