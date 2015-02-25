@@ -53,6 +53,7 @@
     Triangle *_currentTriangle;
     Square *_currentSquare;
     Circle *_currentCircle;
+    Star *_currentStar;
     
     TriangleHole *_triHole;
     SquareHole *_squareHole;
@@ -91,30 +92,38 @@
   
     TriangleHole *triHole=(TriangleHole*) [CCBReader load:@"TriangleHole"];
     triHole.positionType = CCPositionTypeNormalized;
-    triHole.position= ccp(.5, .5);
+    triHole.position= ccp(.8, .5);
     triHole.opacity= .5;
-    triHole.scale= 1.2;
+    triHole.scale= 1.1;
     [_contentNode addChild: triHole];
     _triHole=triHole;
   
     
     SquareHole *squareHole=(SquareHole*) [CCBReader load:@"SquareHole"];
     squareHole.positionType = CCPositionTypeNormalized;
-    squareHole.position= ccp(.8, .5);
-    squareHole.scale= 1.2;
+    squareHole.position= ccp(.2, .5);
+    squareHole.scale= 1.1;
     squareHole.opacity= .5;
     [_contentNode addChild: squareHole];
     _squareHole=squareHole;
-   
     
     
     CircleHole *circleHole=(CircleHole*) [CCBReader load:@"CircleHole"];
     circleHole.positionType = CCPositionTypeNormalized;
-    circleHole.position= ccp(.2, .5);
-    circleHole.scale= 1.2;
+    circleHole.position= ccp(.4, .5);
+    circleHole.scale= 1.1;
     circleHole.opacity= .5;
     [_contentNode addChild: circleHole];
     _circleHole=circleHole;
+    
+    
+    StarHole *starHole=(StarHole*) [CCBReader load:@"StarHole"];
+    starHole.positionType = CCPositionTypeNormalized;
+    starHole.position= ccp(.6, .5);
+    starHole.scale= 1.1;
+    starHole.opacity= .5;
+    [_contentNode addChild: starHole];
+    _starHole=starHole;
     
     
     [self startGame];

@@ -13,6 +13,6 @@
 @property (nonatomic, assign) BOOL aTriangle;
 @property (nonatomic, assign) BOOL aSquare;
 @property (nonatomic, assign) BOOL aCircle;
-
+@property (nonatomic, assign) BOOL aStar;
 
 @end
