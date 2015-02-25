@@ -107,6 +107,7 @@
 {
 
     [self spawnTriangle];
+    [self spawnSquare];
     
 }
 
@@ -147,27 +148,43 @@
 
 }
 
-
-//touch methods
-- (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+-(void) spawnSquare
 {
-
+    Square *newSquare=(Square*) [CCBReader load:@"Square"];
+    newSquare.positionType = CCPositionTypeNormalized;
+    newSquare.position= ccp(.7, .3);
+    
+    [_contentNode addChild: newSquare];
+    _currentShape = newSquare;
+    
+    [_allShapes addObject: _currentShape];
+    _aTriangle=TRUE;
+    
+    
 }
 
-- (void)touchMoved:(CCTouch *)touch withEvent:(CCTouchEvent *)event
-{
-    CGPoint touchLocation = [touch locationInNode:_contentNode];
-    if (CGRectContainsPoint([_currentShape boundingBox], touchLocation))
-    {
-        _currentShape.positionInPoints=touchLocation;
-        //positionInPoints works, but .position does not
-    }
 
-}
 
--(void) touchEnded:(CCTouch *)touch withEvent:(CCTouchEvent *)event
-{
-
-}
+//touch methods- moved into shapes class
+//- (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+//{
+//
+//}
+//
+//- (void)touchMoved:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+//{
+//    CGPoint touchLocation = [touch locationInNode:_contentNode];
+//    if (CGRectContainsPoint([_currentShape boundingBox], touchLocation))
+//    {
+//        _currentShape.positionInPoints=touchLocation;
+//        //positionInPoints works, but .position does not
+//    }
+//
+//}
+//
+//-(void) touchEnded:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+//{
+//
+//}
 
 @end

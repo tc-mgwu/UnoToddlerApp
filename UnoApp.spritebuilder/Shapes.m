@@ -31,4 +31,26 @@
     //    self.scale=.8;
 }
 
+
+- (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+{
+    
+}
+
+- (void)touchMoved:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+{
+    CGPoint touchLocation = [touch locationInNode: _parent];
+    if (CGRectContainsPoint([self boundingBox], touchLocation))
+    {
+        self.positionInPoints=touchLocation;
+        //positionInPoints works, but .position does not
+    }
+    
+}
+
+-(void) touchEnded:(CCTouch *)touch withEvent:(CCTouchEvent *)event
+{
+    
+}
+
 @end
