@@ -50,8 +50,10 @@
     NSMutableArray *_allShapes;
     
     
-    Shapes *_currentShape;
+    Triangle *_currentTriangle;
+    Square *_currentSquare;
     TriangleHole *_triHole;
+    
     CircleHole *_circleHole;
     SquareHole *_squareHole;
     StarHole *_starHole;
@@ -91,6 +93,14 @@
     triHole.position= ccp(.5, .5);
     [_contentNode addChild: triHole];
     _triHole=triHole;
+    triHole.scale= 1.2;
+    
+    SquareHole *squareHole=(SquareHole*) [CCBReader load:@"SquareHole"];
+    squareHole.positionType = CCPositionTypeNormalized;
+    squareHole.position= ccp(.8, .5);
+    [_contentNode addChild: squareHole];
+    _squareHole=squareHole;
+    squareHole.scale= 1.2;
     
     [self startGame];
 }
@@ -121,13 +131,24 @@
     
         if (_aTriangle)
         {
-            if (CGRectIntersectsRect(_currentShape.boundingBox, _triHole.boundingBox))
+            if (CGRectContainsRect(_currentTriangle.boundingBox, _triHole.boundingBox))
             {
                 CCLOG(@"Correct");
-                _currentShape.visible=NO;
+                _currentTriangle.visible=NO;
             }
         }
+    
+    if (_aSquare)
+    {
         
+        if (CGRectContainsRect(_squareHole.boundingBox, _currentSquare.boundingBox))
+        {
+            CCLOG(@"Correct");
+            _currentSquare.visible=NO;
+            
+        }
+    }
+    
 //    }
 
 }
@@ -140,9 +161,9 @@
     newtriangle.position= ccp(.5, .3);
 
     [_contentNode addChild: newtriangle];
-    _currentShape = newtriangle;   
+    _currentTriangle = newtriangle;
 
-    [_allShapes addObject: _currentShape];
+    [_allShapes addObject: _currentTriangle];
     _aTriangle=TRUE;
    
 
@@ -155,10 +176,10 @@
     newSquare.position= ccp(.7, .3);
     
     [_contentNode addChild: newSquare];
-    _currentShape = newSquare;
+    _currentSquare = newSquare;
     
-    [_allShapes addObject: _currentShape];
-    _aTriangle=TRUE;
+    [_allShapes addObject: _currentSquare];
+    _aSquare=TRUE;
     
     
 }
