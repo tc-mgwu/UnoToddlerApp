@@ -90,40 +90,8 @@
     
     //spawn shape holes here
   
-    TriangleHole *triHole=(TriangleHole*) [CCBReader load:@"TriangleHole"];
-    triHole.positionType = CCPositionTypeNormalized;
-    triHole.position= ccp(.8, .5);
-    triHole.opacity= .5;
-    triHole.scale= 1.1;
-    [_contentNode addChild: triHole];
-    _triHole=triHole;
-  
+
     
-    SquareHole *squareHole=(SquareHole*) [CCBReader load:@"SquareHole"];
-    squareHole.positionType = CCPositionTypeNormalized;
-    squareHole.position= ccp(.2, .5);
-    squareHole.scale= 1.1;
-    squareHole.opacity= .5;
-    [_contentNode addChild: squareHole];
-    _squareHole=squareHole;
-    
-    
-    CircleHole *circleHole=(CircleHole*) [CCBReader load:@"CircleHole"];
-    circleHole.positionType = CCPositionTypeNormalized;
-    circleHole.position= ccp(.4, .5);
-    circleHole.scale= 1.1;
-    circleHole.opacity= .5;
-    [_contentNode addChild: circleHole];
-    _circleHole=circleHole;
-    
-    
-    StarHole *starHole=(StarHole*) [CCBReader load:@"StarHole"];
-    starHole.positionType = CCPositionTypeNormalized;
-    starHole.position= ccp(.6, .5);
-    starHole.scale= 1.1;
-    starHole.opacity= .5;
-    [_contentNode addChild: starHole];
-    _starHole=starHole;
     
     
     [self startGame];
@@ -135,15 +103,70 @@
     self.userInteractionEnabled = TRUE;
 
     _allShapes = [NSMutableArray array];
+    _allShapeHoles= @[_squareHole,_triHole,_circleHole,_starHole];
+    
 }
 
 -(void) startGame
 {
-
+//pick random shape holes and shapes
+    
     [self spawnTriangle];
     [self spawnSquare];
     
 }
+
+-(void) spawnTriangleHole
+{
+
+    TriangleHole *triHole=(TriangleHole*) [CCBReader load:@"TriangleHole"];
+    triHole.positionType = CCPositionTypeNormalized;
+    triHole.position= ccp(.8, .5);
+    triHole.opacity= .5;
+    triHole.scale= 1.1;
+    [_contentNode addChild: triHole];
+    _triHole=triHole;
+
+}
+
+-(void) spawnCircleHole
+{
+    CircleHole *circleHole=(CircleHole*) [CCBReader load:@"CircleHole"];
+    circleHole.positionType = CCPositionTypeNormalized;
+    circleHole.position= ccp(.4, .5);
+    circleHole.scale= 1.1;
+    circleHole.opacity= .5;
+    [_contentNode addChild: circleHole];
+    _circleHole=circleHole;
+    
+}
+
+-(void) spawnStarHole
+{
+    StarHole *starHole=(StarHole*) [CCBReader load:@"StarHole"];
+    starHole.positionType = CCPositionTypeNormalized;
+    starHole.position= ccp(.6, .5);
+    starHole.scale= 1.1;
+    starHole.opacity= .5;
+    [_contentNode addChild: starHole];
+    _starHole=starHole;
+
+}
+
+-(void) spawnSquareHole
+{
+    SquareHole *squareHole=(SquareHole*) [CCBReader load:@"SquareHole"];
+    squareHole.positionType = CCPositionTypeNormalized;
+    squareHole.position= ccp(.2, .5);
+    squareHole.scale= 1.1;
+    squareHole.opacity= .5;
+    [_contentNode addChild: squareHole];
+    _squareHole=squareHole;
+}
+
+
+
+
 
 -(void) update:(CCTime)delta
 {
@@ -159,6 +182,12 @@
             {
                 CCLOG(@"Correct");
                 _currentTriangle.visible=NO;
+                
+//                CCParticleSystem *particle1 = (CCParticleSystem *)[CCBReader load:@"Particle1"];
+//                particle1.autoRemoveOnFinish = TRUE;
+//                particle1.positionInPoints = _currentTriangle.positionInPoints;
+//                [_currentTriangle.parent addChild:particle1];
+            
             }
         }
     
@@ -222,6 +251,18 @@
     
     
 }
+
+-(void) randomShapeSpawner
+{
+    int randomChance= arc4random_uniform(100);
+    //    CCLOG(@"%i",randomChance);
+    if (randomChance<=90)
+    {
+    }
+    
+}
+
+
 
 
 //touch methods- moved into shapes class
