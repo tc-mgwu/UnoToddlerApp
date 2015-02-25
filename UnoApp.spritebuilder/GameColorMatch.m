@@ -10,6 +10,8 @@
 #import "GameColorMatch.h"
 #import "UnoColor.h"
 #import "UnoFace.h"
+#import "CCBReader.h"
+#import "CCAnimationManager.h"
 
 //this is the current version.
 
@@ -35,7 +37,7 @@
 
     NSArray *_allColors;
     
-    CCButton *_readyButton;
+    UIButton *_readyButton;
     
 }
 
@@ -90,7 +92,7 @@
 
 -(void) ready
 {
-    _readyButton.visible=NO;
+    
     _readyButton.enabled=NO;
     [self startGame];
 
