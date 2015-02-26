@@ -10,6 +10,7 @@
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		A53C52FE1A8D54F600E3191B /* AnimalZoo.m in Sources */ = {isa = PBXBuildFile; fileRef = A53C52FD1A8D54F600E3191B /* AnimalZoo.m */; };
 		A55DB1181A5F36D60033B9C9 /* Shapes.m in Sources */ = {isa = PBXBuildFile; fileRef = A55DB1171A5F36D60033B9C9 /* Shapes.m */; };
+		A570183C1A9EA90100E059D7 /* Elephant.m in Sources */ = {isa = PBXBuildFile; fileRef = A570183B1A9EA90100E059D7 /* Elephant.m */; };
 		A58F88981A9D5095009154F1 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = A58F88971A9D5095009154F1 /* Circle.m */; };
 		A58F889F1A9D50CD009154F1 /* CircleHole.m in Sources */ = {isa = PBXBuildFile; fileRef = A58F889E1A9D50CD009154F1 /* CircleHole.m */; };
 		A58F88A21A9D50EB009154F1 /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = A58F88A11A9D50EB009154F1 /* Square.m */; };
@@ -97,6 +98,8 @@
 		A53C52FD1A8D54F600E3191B /* AnimalZoo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalZoo.m; sourceTree = "<group>"; };
 		A55DB1161A5F36D60033B9C9 /* Shapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shapes.h; sourceTree = "<group>"; };
 		A55DB1171A5F36D60033B9C9 /* Shapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shapes.m; sourceTree = "<group>"; };
+		A570183A1A9EA90100E059D7 /* Elephant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Elephant.h; sourceTree = "<group>"; };
+		A570183B1A9EA90100E059D7 /* Elephant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Elephant.m; sourceTree = "<group>"; };
 		A58F88961A9D5095009154F1 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
 		A58F88971A9D5095009154F1 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
 		A58F889D1A9D50CD009154F1 /* CircleHole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleHole.h; sourceTree = "<group>"; };
@@ -225,6 +228,8 @@
 				B7378993180767190076A88C /* MainScene.m */,
 				A53C52FC1A8D54F600E3191B /* AnimalZoo.h */,
 				A53C52FD1A8D54F600E3191B /* AnimalZoo.m */,
+				A570183A1A9EA90100E059D7 /* Elephant.h */,
+				A570183B1A9EA90100E059D7 /* Elephant.m */,
 				A5C3D80D19A970E30062BD00 /* GameColorMatch.h */,
 				A5C3D80E19A970E30062BD00 /* GameColorMatch.m */,
 				A5CF50BB19DB771F000B71B0 /* FakePhone.h */,
@@ -477,6 +482,7 @@
 				A58F88A81A9D510F009154F1 /* Star.m in Sources */,
 				A5CF50BD19DB771F000B71B0 /* FakePhone.m in Sources */,
 				A58F88981A9D5095009154F1 /* Circle.m in Sources */,
+				A570183C1A9EA90100E059D7 /* Elephant.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
