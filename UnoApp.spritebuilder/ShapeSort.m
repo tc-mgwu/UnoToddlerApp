@@ -49,6 +49,8 @@
     
     NSMutableArray *_allShapes;
     
+    Shapes *_currentShape1;
+    Shapes *_currentShape2;
     
     Triangle *_currentTriangle;
     Square *_currentSquare;
@@ -110,7 +112,7 @@
 -(void) startGame
 {
 //pick random shape holes and shapes
-    
+    [self randomShapePicker];
     [self spawnTriangle];
     [self spawnSquare];
     
@@ -133,7 +135,16 @@
 {
     CircleHole *circleHole=(CircleHole*) [CCBReader load:@"CircleHole"];
     circleHole.positionType = CCPositionTypeNormalized;
-    circleHole.position= ccp(.4, .5);
+   
+    if (self.shapePos1)
+    {
+        circleHole.position= ccp(.3, .5);
+    }
+    if (self.shapePos2)
+    {
+        circleHole.position= ccp(.7, .5);
+    }
+    
     circleHole.scale= 1.1;
     circleHole.opacity= .5;
     [_contentNode addChild: circleHole];
@@ -157,7 +168,15 @@
 {
     SquareHole *squareHole=(SquareHole*) [CCBReader load:@"SquareHole"];
     squareHole.positionType = CCPositionTypeNormalized;
-    squareHole.position= ccp(.2, .5);
+  
+    if (self.shapePos1)
+    {
+        squareHole.position= ccp(.3, .5);
+    }
+    if (self.shapePos2)
+    {
+        squareHole.position= ccp(.7, .5);
+    }
     squareHole.scale= 1.1;
     squareHole.opacity= .5;
     [_contentNode addChild: squareHole];
@@ -165,6 +184,39 @@
 }
 
 
+-(void) randomShapePicker
+{
+    int randomChance= arc4random() % 3;
+    _currentShape1= _allShapeHoles[randomChance];
+     _currentShape2= _allShapeHoles[randomChance];
+
+    if (_currentShape1==_currentShape2)
+    {
+        _currentShape2= _allShapeHoles[randomChance];
+
+    }
+    
+    if (_currentShape2==_squareHole) {
+        [self spawnSquareHole];
+        self.shapePos2=TRUE;
+    }
+    
+    if (_currentShape2==_circleHole) {
+        [self spawnCircleHole];
+         self.shapePos2=TRUE;
+    }
+    
+    
+    if (_currentShape1==_squareHole) {
+        [self spawnSquareHole];
+        self.shapePos1=TRUE;
+    }
+    
+    if (_currentShape1==_circleHole) {
+        [self spawnCircleHole];
+        self.shapePos1=TRUE;
+    }
+}
 
 
 

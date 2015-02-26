@@ -14,5 +14,7 @@
 @property (nonatomic, assign) BOOL aSquare;
 @property (nonatomic, assign) BOOL aCircle;
 @property (nonatomic, assign) BOOL aStar;
+@property (nonatomic, assign) BOOL shapePos1;
+@property (nonatomic, assign) BOOL shapePos2;
 
 @end
