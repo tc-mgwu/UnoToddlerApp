@@ -37,7 +37,8 @@
     UnoColor *_color8;
     UnoColor *_color9;
     
-   
+    UIButton *_back;
+
 //    NSArray *_allShapes;
     //array to hold all shapes
     
@@ -71,7 +72,7 @@
     _currentColor=(UnoColor *)[CCBReader load:@"UnoColor" owner:self];
     _currentColor.positionType = CCPositionTypeNormalized;
     
-    _currentColor.position = ccp(0.5, .81);
+    _currentColor.position = ccp(0.5, .8);
     [self addChild:_currentColor];
     
     _currentFace =(UnoFace *) [CCBReader load:@"UnoFace" owner: self];
@@ -105,7 +106,7 @@
     self.userInteractionEnabled = TRUE;
 
     _allShapes = [NSMutableArray array];
-    _allShapeHoles= @[_squareHole,_triHole,_circleHole,_starHole];
+//    _allShapeHoles= @[_squareHole,_triHole,_circleHole,_starHole];
     
 }
 
@@ -315,28 +316,13 @@
 }
 
 
-
-
-//touch methods- moved into shapes class
-//- (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event
-//{
-//
-//}
-//
-//- (void)touchMoved:(CCTouch *)touch withEvent:(CCTouchEvent *)event
-//{
-//    CGPoint touchLocation = [touch locationInNode:_contentNode];
-//    if (CGRectContainsPoint([_currentShape boundingBox], touchLocation))
-//    {
-//        _currentShape.positionInPoints=touchLocation;
-//        //positionInPoints works, but .position does not
-//    }
-//
-//}
-//
-//-(void) touchEnded:(CCTouch *)touch withEvent:(CCTouchEvent *)event
-//{
-//
-//}
+-(void) back
+{
+    
+    CCScene *main = [CCBReader loadAsScene:@"MainScene"];
+    CCTransition *transition = [CCTransition transitionFadeWithDuration:0.8f];
+    [[CCDirector sharedDirector] presentScene:main withTransition:transition];
+    
+}
 
 @end

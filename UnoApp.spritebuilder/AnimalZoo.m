@@ -34,6 +34,8 @@
     UnoColor *_color8;
     UnoColor *_color9;
     
+      UIButton *_back;
+    
     OALSimpleAudio *AudioPlayer;
     id<ALSoundSource> _Gamecaf;
     
@@ -50,7 +52,7 @@
     _currentColor=(UnoColor *)[CCBReader load:@"UnoColor" owner:self];
     _currentColor.positionType = CCPositionTypeNormalized;
     
-    _currentColor.position = ccp(0.5, .81);
+    _currentColor.position = ccp(0.5, .8);
     [self addChild:_currentColor];
     
     _currentFace =(UnoFace *) [CCBReader load:@"UnoFace" owner: self];
@@ -74,6 +76,13 @@
  
 
 }
-
+-(void) back
+{
+    
+    CCScene *main = [CCBReader loadAsScene:@"MainScene"];
+    CCTransition *transition = [CCTransition transitionFadeWithDuration:0.8f];
+    [[CCDirector sharedDirector] presentScene:main withTransition:transition];
+    
+}
 
 @end

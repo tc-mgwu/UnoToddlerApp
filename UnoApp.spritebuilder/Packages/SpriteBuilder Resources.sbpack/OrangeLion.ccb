@@ -57,7 +57,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>Animals/elephant1.png</string>
+								<string>Animals/lion1.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -75,7 +75,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>Animals/elephant2.png</string>
+								<string>Animals/lion2.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -93,7 +93,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>Animals/elephant3.png</string>
+								<string>Animals/lion3.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -106,12 +106,12 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.60000002384185791</real>
+							<real>0.56666666269302368</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>Animals/elephant4.png</string>
+								<string>Animals/lion4.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -124,12 +124,12 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>0.80000001192092896</real>
+							<real>0.76666665077209473</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>Animals/elephant3.png</string>
+								<string>Animals/lion3.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -142,12 +142,12 @@
 							<key>name</key>
 							<string>spriteFrame</string>
 							<key>time</key>
-							<real>1</real>
+							<real>0.96666663885116577</real>
 							<key>type</key>
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>Animals/elephant2.png</string>
+								<string>Animals/lion2.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -165,7 +165,7 @@
 							<integer>7</integer>
 							<key>value</key>
 							<array>
-								<string>Animals/elephant1.png</string>
+								<string>Animals/lion1.png</string>
 								<string>Use regular file</string>
 							</array>
 						</dict>
@@ -240,7 +240,7 @@
 			<dict>
 				<key>baseValue</key>
 				<array>
-					<string>Assets/elephant1.png</string>
+					<string>Animals/lion1.png</string>
 					<string>Use regular file</string>
 				</array>
 				<key>name</key>
@@ -250,7 +250,7 @@
 				<key>value</key>
 				<array>
 					<string></string>
-					<string>Animals/elephant1.png</string>
+					<string>Animals/lion1.png</string>
 				</array>
 			</dict>
 			<dict>
@@ -286,6 +286,8 @@
 				<array/>
 			</dict>
 		</array>
+		<key>seqExpanded</key>
+		<true/>
 	</dict>
 	<key>notes</key>
 	<array/>
@@ -324,7 +326,7 @@
 	<array>
 		<dict>
 			<key>autoPlay</key>
-			<false/>
+			<true/>
 			<key>callbackChannel</key>
 			<dict>
 				<key>keyframes</key>
@@ -337,53 +339,17 @@
 			<key>length</key>
 			<real>1.1666666269302368</real>
 			<key>name</key>
-			<string>Move</string>
-			<key>offset</key>
-			<real>0.0</real>
-			<key>position</key>
-			<real>0.0</real>
-			<key>resolution</key>
-			<real>30</real>
-			<key>scale</key>
-			<real>217.03511047363281</real>
-			<key>sequenceId</key>
-			<integer>0</integer>
-			<key>soundChannel</key>
-			<dict>
-				<key>isExpanded</key>
-				<false/>
-				<key>keyframes</key>
-				<array/>
-				<key>type</key>
-				<integer>11</integer>
-			</dict>
-		</dict>
-		<dict>
-			<key>autoPlay</key>
-			<true/>
-			<key>callbackChannel</key>
-			<dict>
-				<key>keyframes</key>
-				<array/>
-				<key>type</key>
-				<integer>12</integer>
-			</dict>
-			<key>chainedSequenceId</key>
-			<integer>-1</integer>
-			<key>length</key>
-			<real>10</real>
-			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>0.69999998807907104</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
-			<real>128</real>
+			<real>163.8609619140625</real>
 			<key>sequenceId</key>
-			<integer>1</integer>
+			<integer>0</integer>
 			<key>soundChannel</key>
 			<dict>
 				<key>isExpanded</key>

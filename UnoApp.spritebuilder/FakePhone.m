@@ -9,6 +9,8 @@
 #import "FakePhone.h"
 #import "UnoColor.h"
 #import "UnoFace.h"
+#import "CCBReader.h"
+#import "CCAnimationManager.h"
 
 @implementation FakePhone
 {
@@ -28,6 +30,7 @@
     UnoColor *_color9;
     
     NSArray *_phonenumber;
+      UIButton *_back;
 }
 
 -(void) onEnter
@@ -38,7 +41,7 @@
     _currentColor=(UnoColor *)[CCBReader load:@"UnoColor" owner:self];
     _currentColor.positionType = CCPositionTypeNormalized;
     
-    _currentColor.position = ccp(0.5, .81);
+    _currentColor.position = ccp(0.5, .8);
     [self addChild:_currentColor];
     
     _currentFace =(UnoFace *) [CCBReader load:@"UnoFace" owner: self];
@@ -119,6 +122,15 @@
 -(void) press9
 {
     
+    
+}
+
+-(void) back
+{
+    
+    CCScene *main = [CCBReader loadAsScene:@"MainScene"];
+    CCTransition *transition = [CCTransition transitionFadeWithDuration:0.8f];
+    [[CCDirector sharedDirector] presentScene:main withTransition:transition];
     
 }
 
