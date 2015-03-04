@@ -426,6 +426,27 @@
         }
     }
     
+    if (_aTriangle)
+    {
+        
+        if (CGRectContainsRect(_triHole.boundingBox, _currentTriangle.boundingBox))
+        {
+            CCLOG(@"Correct");
+            _currentTriangle.visible=NO;
+            
+        }
+    }
+    
+    if (_aStar)
+    {
+        
+        if (CGRectContainsRect(_starHole.boundingBox, _currentStar.boundingBox))
+        {
+            CCLOG(@"Correct");
+            _currentStar.visible=NO;
+            
+        }
+    }
 //    }
 
 }
@@ -489,11 +510,13 @@
     Star *newStar=(Star*) [CCBReader load:@"Star"];
     newStar.positionType = CCPositionTypeNormalized;
     
-    if (self.combo4 || self.combo5 || self.combo6 || self.combo7 || self.combo8 || self.combo9) {
+    if (self.combo4 || self.combo5 || self.combo6 || self.combo7 || self.combo8) {
         newStar.position = _spawnNode5.position;
-    }
+        }
  
-    
+    if (self.combo9) {
+        newStar.position = _spawnNode4.position;
+        }
     
     [_contentNode addChild: newStar];
     _currentStar = newStar;
