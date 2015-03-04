@@ -36,9 +36,13 @@
     UnoColor *_color7;
     UnoColor *_color8;
     UnoColor *_color9;
+    
     CCNode *_spawnNode1;
     CCNode *_spawnNode2;
     CCNode *_spawnNode3;
+    CCNode *_spawnNode4;
+    CCNode *_spawnNode5;
+    CCNode *_spawnNode6;
     
     UIButton *_back;
 
@@ -126,7 +130,17 @@
 
     TriangleHole *triHole=(TriangleHole*) [CCBReader load:@"TriangleHole"];
     triHole.positionType = CCPositionTypeNormalized;
-    triHole.position= ccp(.8, .5);
+    if (self.combo1 || self.combo9) {
+        triHole.position = _spawnNode1.position;
+    }
+    
+    if (self.combo2 || self.combo7) {
+        triHole.position = _spawnNode2.position;
+    }
+    
+    if (self.combo3 || self.combo8) {
+        triHole.position = _spawnNode3.position;
+    }
     triHole.opacity= .5;
     triHole.scale= 1.1;
     [_contentNode addChild: triHole];
@@ -138,9 +152,19 @@
 {
     CircleHole *circleHole=(CircleHole*) [CCBReader load:@"CircleHole"];
     circleHole.positionType = CCPositionTypeNormalized;
-   
-
     
+    if (self.combo1 || self.combo4 || self.combo7) {
+        circleHole.position = _spawnNode3.position;
+    }
+    
+    if (self.combo2 || self.combo5 || self.combo8) {
+        circleHole.position = _spawnNode1.position;
+    }
+    
+    if (self.combo3 || self.combo6 || self.combo9) {
+        circleHole.position = _spawnNode2.position;
+    }
+
     circleHole.scale= 1.1;
     circleHole.opacity= .5;
     [_contentNode addChild: circleHole];
@@ -152,7 +176,19 @@
 {
     StarHole *starHole=(StarHole*) [CCBReader load:@"StarHole"];
     starHole.positionType = CCPositionTypeNormalized;
-    starHole.position= ccp(.6, .5);
+    
+    if (self.combo4 || self.combo7) {
+        starHole.position = _spawnNode1.position;
+    }
+    
+    if (self.combo5 || self.combo8) {
+        starHole.position = _spawnNode2.position;
+    }
+    
+    if (self.combo6 || self.combo9) {
+        starHole.position = _spawnNode3.position;
+    }
+    
     starHole.scale= 1.1;
     starHole.opacity= .5;
     [_contentNode addChild: starHole];
@@ -165,6 +201,16 @@
     SquareHole *squareHole=(SquareHole*) [CCBReader load:@"SquareHole"];
     squareHole.positionType = CCPositionTypeNormalized;
   
+    if (self.combo1 || self.combo4) {
+        squareHole.position = _spawnNode2.position;
+    }
+    
+    if (self.combo2 || self.combo4) {
+        squareHole.position = _spawnNode3.position;
+    }
+    if (self.combo3 || self.combo6) {
+        squareHole.position = _spawnNode1.position;
+    }
 
     squareHole.scale= 1.1;
     squareHole.opacity= .5;
@@ -187,6 +233,13 @@
         self.combo7=NO;
         self.combo8=NO;
         self.combo9=NO;
+        
+        [self spawnSquareHole];
+        [self spawnTriangleHole];
+        [self spawnCircleHole];
+        [self spawnTriangle];
+        [self spawnSquare];
+        [self spawnCircle];
   
 
     }
@@ -201,6 +254,12 @@
         self.combo7=NO;
         self.combo8=NO;
         self.combo9=NO;
+        [self spawnSquareHole];
+        [self spawnTriangleHole];
+        [self spawnCircleHole];
+        [self spawnTriangle];
+        [self spawnSquare];
+        [self spawnCircle];
      
     
     }
@@ -216,6 +275,12 @@
         self.combo7=NO;
         self.combo8=NO;
         self.combo9=NO;
+        [self spawnSquareHole];
+        [self spawnTriangleHole];
+        [self spawnCircleHole];
+        [self spawnTriangle];
+        [self spawnSquare];
+        [self spawnCircle];
 
     }
     
@@ -229,6 +294,12 @@
         self.combo7=NO;
         self.combo8=NO;
         self.combo9=NO;
+        [self spawnSquareHole];
+        [self spawnStarHole];
+        [self spawnCircleHole];
+        [self spawnStar];
+        [self spawnSquare];
+        [self spawnCircle];
     }
     if (randomChance == 5) {
         self.combo1=NO;
@@ -240,6 +311,12 @@
         self.combo7=NO;
         self.combo8=NO;
         self.combo9=NO;
+        [self spawnSquareHole];
+        [self spawnStarHole];
+        [self spawnCircleHole];
+        [self spawnStar];
+        [self spawnSquare];
+        [self spawnCircle];
     }
     
     if (randomChance == 6) {
@@ -252,6 +329,12 @@
         self.combo7=NO;
         self.combo8=NO;
         self.combo9=NO;
+        [self spawnSquareHole];
+        [self spawnStarHole];
+        [self spawnCircleHole];
+        [self spawnStar];
+        [self spawnSquare];
+        [self spawnCircle];
     }
     if (randomChance == 7) {
         self.combo1=NO;
@@ -263,6 +346,12 @@
         self.combo7=YES;
         self.combo8=NO;
         self.combo9=NO;
+        [self spawnTriangleHole];
+        [self spawnStarHole];
+        [self spawnCircleHole];
+        [self spawnStar];
+        [self spawnTriangle];
+        [self spawnCircle];
     }
     
     if (randomChance == 8) {
@@ -275,6 +364,12 @@
         self.combo7=NO;
         self.combo8=YES;
         self.combo9=NO;
+        [self spawnTriangleHole];
+        [self spawnStarHole];
+        [self spawnCircleHole];
+        [self spawnStar];
+        [self spawnTriangle];
+        [self spawnCircle];
     }
     if (randomChance >= 9) {
         self.combo1=NO;
@@ -286,6 +381,12 @@
         self.combo7=NO;
         self.combo8=NO;
         self.combo9=YES;
+        [self spawnTriangleHole];
+        [self spawnStarHole];
+        [self spawnCircleHole];
+        [self spawnStar];
+        [self spawnTriangle];
+        [self spawnCircle];
     }
 }
 
@@ -337,18 +438,9 @@
     newtriangle.position= _spawnNode1.position;
 
   
-    
-    if (self.combo1) {
-    newtriangle.position = _spawnNode1.position;
-    }
-    
-    if (self.combo2) {
-        newtriangle.position = _spawnNode2.position;
-    }
-    
-    if (self.combo3) {
-        newtriangle.position = _spawnNode3.position;
-    }
+ 
+    newtriangle.position = _spawnNode5.position;
+
     
     [_contentNode addChild: newtriangle];
     _currentTriangle = newtriangle;
@@ -362,16 +454,10 @@
     Square *newSquare=(Square*) [CCBReader load:@"Square"];
     newSquare.positionType = CCPositionTypeNormalized;
 
-    if (self.combo1) {
-        newSquare.position = _spawnNode2.position;
-    }
+   
+    newSquare.position = _spawnNode4.position;
     
-    if (self.combo2) {
-        newSquare.position = _spawnNode3.position;
-    }
-    if (self.combo3) {
-        newSquare.position = _spawnNode1.position;
-    }
+
     [_contentNode addChild: newSquare];
     _currentSquare = newSquare;
     
@@ -386,20 +472,9 @@
     Circle *newCircle=(Circle*) [CCBReader load:@"Circle"];
     newCircle.positionType = CCPositionTypeNormalized;
     
-    if (self.combo1) {
-        newCircle.position = _spawnNode3.position;
-    }
-    
-    if (self.combo2) {
-        newCircle.position = _spawnNode1.position;
-    }
-    
-    if (self.combo3) {
-        newCircle.position = _spawnNode2.position;
-    }
-    
-    
-    
+
+    newCircle.position = _spawnNode6.position;
+     
     [_contentNode addChild: newCircle];
     _currentCircle = newCircle;
     
@@ -414,18 +489,10 @@
     Star *newStar=(Star*) [CCBReader load:@"Star"];
     newStar.positionType = CCPositionTypeNormalized;
     
-    if (self.combo4) {
-        newStar.position = _spawnNode1.position;
+    if (self.combo4 || self.combo5 || self.combo6 || self.combo7 || self.combo8 || self.combo9) {
+        newStar.position = _spawnNode5.position;
     }
-    
-    if (self.combo5) {
-        newStar.position = _spawnNode2.position;
-    }
-    
-    if (self.combo6) {
-        newStar.position = _spawnNode3.position;
-    }
-    
+ 
     
     
     [_contentNode addChild: newStar];
@@ -437,16 +504,6 @@
     
 }
 
-
--(void) randomShapeSpawner
-{
-    int randomChance= arc4random_uniform(100);
-    //    CCLOG(@"%i",randomChance);
-    if (randomChance<=90)
-    {
-    }
-    
-}
 
 
 -(void) back
