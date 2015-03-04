@@ -36,6 +36,9 @@
     UnoColor *_color7;
     UnoColor *_color8;
     UnoColor *_color9;
+    CCNode *_spawnNode1;
+    CCNode *_spawnNode2;
+    CCNode *_spawnNode3;
     
     UIButton *_back;
 
@@ -44,6 +47,8 @@
     
     NSArray *_allShapeHoles;
     //array to hold all shapes
+    
+     NSArray *_allSpawnNodes;
     
     NSArray *_allShapePositions;
     //arrary to hold shape positions
@@ -108,15 +113,12 @@
     _allShapes = [NSMutableArray array];
 //    _allShapeHoles= @[_squareHole,_triHole,_circleHole,_starHole];
     
+    
 }
 
 -(void) startGame
 {
-//pick random shape holes and shapes
     [self randomShapePicker];
-    [self spawnTriangle];
-    [self spawnSquare];
-    
 }
 
 -(void) spawnTriangleHole
@@ -137,14 +139,7 @@
     CircleHole *circleHole=(CircleHole*) [CCBReader load:@"CircleHole"];
     circleHole.positionType = CCPositionTypeNormalized;
    
-    if (self.shapePos1)
-    {
-        circleHole.position= ccp(.3, .5);
-    }
-    if (self.shapePos2)
-    {
-        circleHole.position= ccp(.7, .5);
-    }
+
     
     circleHole.scale= 1.1;
     circleHole.opacity= .5;
@@ -170,14 +165,7 @@
     SquareHole *squareHole=(SquareHole*) [CCBReader load:@"SquareHole"];
     squareHole.positionType = CCPositionTypeNormalized;
   
-    if (self.shapePos1)
-    {
-        squareHole.position= ccp(.3, .5);
-    }
-    if (self.shapePos2)
-    {
-        squareHole.position= ccp(.7, .5);
-    }
+
     squareHole.scale= 1.1;
     squareHole.opacity= .5;
     [_contentNode addChild: squareHole];
@@ -187,35 +175,117 @@
 
 -(void) randomShapePicker
 {
-    int randomChance= arc4random() % 3;
-    _currentShape1= _allShapeHoles[randomChance];
-     _currentShape2= _allShapeHoles[randomChance];
+    int randomChance = arc4random_uniform(10) + 1;
+    
+    if (randomChance <= 1) {
+        self.combo1=YES;
+        self.combo2=NO;
+        self.combo3=NO;
+        self.combo4=NO;
+        self.combo5=NO;
+        self.combo6=NO;
+        self.combo7=NO;
+        self.combo8=NO;
+        self.combo9=NO;
+  
 
-    if (_currentShape1==_currentShape2)
-    {
-        _currentShape2= _allShapeHoles[randomChance];
+    }
+    
+    if (randomChance == 2) {
+        self.combo1=NO;
+        self.combo2=YES;
+        self.combo3=NO;
+        self.combo4=NO;
+        self.combo5=NO;
+        self.combo6=NO;
+        self.combo7=NO;
+        self.combo8=NO;
+        self.combo9=NO;
+     
+    
+    }
+    
+    
+    if (randomChance == 3) {
+        self.combo1=NO;
+        self.combo2=NO;
+        self.combo3=YES;
+        self.combo4=NO;
+        self.combo5=NO;
+        self.combo6=NO;
+        self.combo7=NO;
+        self.combo8=NO;
+        self.combo9=NO;
 
     }
     
-    if (_currentShape2==_squareHole) {
-        [self spawnSquareHole];
-        self.shapePos2=TRUE;
+    if (randomChance == 4) {
+        self.combo1=NO;
+        self.combo2=NO;
+        self.combo3=NO;
+        self.combo4=YES;
+        self.combo5=NO;
+        self.combo6=NO;
+        self.combo7=NO;
+        self.combo8=NO;
+        self.combo9=NO;
+    }
+    if (randomChance == 5) {
+        self.combo1=NO;
+        self.combo2=NO;
+        self.combo3=NO;
+        self.combo4=NO;
+        self.combo5=YES;
+        self.combo6=NO;
+        self.combo7=NO;
+        self.combo8=NO;
+        self.combo9=NO;
     }
     
-    if (_currentShape2==_circleHole) {
-        [self spawnCircleHole];
-         self.shapePos2=TRUE;
+    if (randomChance == 6) {
+        self.combo1=NO;
+        self.combo2=NO;
+        self.combo3=NO;
+        self.combo4=NO;
+        self.combo5=NO;
+        self.combo6=YES;
+        self.combo7=NO;
+        self.combo8=NO;
+        self.combo9=NO;
+    }
+    if (randomChance == 7) {
+        self.combo1=NO;
+        self.combo2=NO;
+        self.combo3=NO;
+        self.combo4=NO;
+        self.combo5=NO;
+        self.combo6=NO;
+        self.combo7=YES;
+        self.combo8=NO;
+        self.combo9=NO;
     }
     
-    
-    if (_currentShape1==_squareHole) {
-        [self spawnSquareHole];
-        self.shapePos1=TRUE;
+    if (randomChance == 8) {
+        self.combo1=NO;
+        self.combo2=NO;
+        self.combo3=NO;
+        self.combo4=NO;
+        self.combo5=NO;
+        self.combo6=NO;
+        self.combo7=NO;
+        self.combo8=YES;
+        self.combo9=NO;
     }
-    
-    if (_currentShape1==_circleHole) {
-        [self spawnCircleHole];
-        self.shapePos1=TRUE;
+    if (randomChance >= 9) {
+        self.combo1=NO;
+        self.combo2=NO;
+        self.combo3=NO;
+        self.combo4=NO;
+        self.combo5=NO;
+        self.combo6=NO;
+        self.combo7=NO;
+        self.combo8=NO;
+        self.combo9=YES;
     }
 }
 
@@ -264,23 +334,44 @@
 {
     Triangle *newtriangle=(Triangle*) [CCBReader load:@"Triangle"];
     newtriangle.positionType = CCPositionTypeNormalized;
-    newtriangle.position= ccp(.5, .3);
+    newtriangle.position= _spawnNode1.position;
 
+  
+    
+    if (self.combo1) {
+    newtriangle.position = _spawnNode1.position;
+    }
+    
+    if (self.combo2) {
+        newtriangle.position = _spawnNode2.position;
+    }
+    
+    if (self.combo3) {
+        newtriangle.position = _spawnNode3.position;
+    }
+    
     [_contentNode addChild: newtriangle];
     _currentTriangle = newtriangle;
 
     [_allShapes addObject: _currentTriangle];
     _aTriangle=TRUE;
-   
-
 }
 
 -(void) spawnSquare
 {
     Square *newSquare=(Square*) [CCBReader load:@"Square"];
     newSquare.positionType = CCPositionTypeNormalized;
-    newSquare.position= ccp(.7, .3);
+
+    if (self.combo1) {
+        newSquare.position = _spawnNode2.position;
+    }
     
+    if (self.combo2) {
+        newSquare.position = _spawnNode3.position;
+    }
+    if (self.combo3) {
+        newSquare.position = _spawnNode1.position;
+    }
     [_contentNode addChild: newSquare];
     _currentSquare = newSquare;
     
@@ -294,7 +385,20 @@
 {
     Circle *newCircle=(Circle*) [CCBReader load:@"Circle"];
     newCircle.positionType = CCPositionTypeNormalized;
-    newCircle.position= ccp(.7, .3);
+    
+    if (self.combo1) {
+        newCircle.position = _spawnNode3.position;
+    }
+    
+    if (self.combo2) {
+        newCircle.position = _spawnNode1.position;
+    }
+    
+    if (self.combo3) {
+        newCircle.position = _spawnNode2.position;
+    }
+    
+    
     
     [_contentNode addChild: newCircle];
     _currentCircle = newCircle;
@@ -304,6 +408,35 @@
     
     
 }
+
+-(void) spawnStar
+{
+    Star *newStar=(Star*) [CCBReader load:@"Star"];
+    newStar.positionType = CCPositionTypeNormalized;
+    
+    if (self.combo4) {
+        newStar.position = _spawnNode1.position;
+    }
+    
+    if (self.combo5) {
+        newStar.position = _spawnNode2.position;
+    }
+    
+    if (self.combo6) {
+        newStar.position = _spawnNode3.position;
+    }
+    
+    
+    
+    [_contentNode addChild: newStar];
+    _currentStar = newStar;
+    
+    [_allShapes addObject: _currentStar];
+    _aStar=TRUE;
+    
+    
+}
+
 
 -(void) randomShapeSpawner
 {
