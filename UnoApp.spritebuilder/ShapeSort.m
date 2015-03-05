@@ -432,7 +432,8 @@
         if (CGRectContainsRect(_triHole.boundingBox, _currentTriangle.boundingBox))
         {
             CCLOG(@"Correct");
-            _currentTriangle.visible=NO;
+//            _currentTriangle.visible=NO;
+            [_currentTriangle removeFromParent];
             
         }
     }
@@ -443,7 +444,8 @@
         if (CGRectContainsRect(_starHole.boundingBox, _currentStar.boundingBox))
         {
             CCLOG(@"Correct");
-            _currentStar.visible=NO;
+//            _currentStar.visible=NO;
+            [_currentStar removeFromParent];
             
         }
     }
@@ -453,8 +455,9 @@
         if (CGRectContainsRect(_circleHole.boundingBox, _currentCircle.boundingBox))
         {
             CCLOG(@"Correct");
-            _currentCircle.visible=NO;
-            
+//            _currentCircle.visible=NO;
+            [_currentCircle removeFromParent];
+
         }
     }
 //    }
@@ -466,11 +469,14 @@
 {
     Triangle *newtriangle=(Triangle*) [CCBReader load:@"Triangle"];
     newtriangle.positionType = CCPositionTypeNormalized;
-    newtriangle.position= _spawnNode1.position;
+    newtriangle.position= _spawnNode5.position;
 
-  
- 
-    newtriangle.position = _spawnNode5.position;
+    
+    if (self.combo7) {
+        newtriangle.position = _spawnNode4.position;
+    }
+    
+
 
     
     [_contentNode addChild: newtriangle];
@@ -520,11 +526,11 @@
     Star *newStar=(Star*) [CCBReader load:@"Star"];
     newStar.positionType = CCPositionTypeNormalized;
     
-    if (self.combo4 || self.combo5 || self.combo6 || self.combo7 || self.combo8) {
+    if (self.combo4 || self.combo7 || self.combo8 || self.combo5) {
         newStar.position = _spawnNode5.position;
         }
  
-    if (self.combo9) {
+    if (self.combo9 || self.combo6 || self.combo8) {
         newStar.position = _spawnNode4.position;
         }
     
