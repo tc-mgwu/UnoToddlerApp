@@ -205,7 +205,7 @@
         squareHole.position = _spawnNode2.position;
     }
     
-    if (self.combo2 || self.combo4) {
+    if (self.combo2 || self.combo5) {
         squareHole.position = _spawnNode3.position;
     }
     if (self.combo3 || self.combo6) {
@@ -444,6 +444,16 @@
         {
             CCLOG(@"Correct");
             _currentStar.visible=NO;
+            
+        }
+    }
+    if (_aCircle)
+    {
+        
+        if (CGRectContainsRect(_circleHole.boundingBox, _currentCircle.boundingBox))
+        {
+            CCLOG(@"Correct");
+            _currentCircle.visible=NO;
             
         }
     }
