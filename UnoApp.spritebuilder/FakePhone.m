@@ -11,7 +11,7 @@
 #import "UnoFace.h"
 #import "CCBReader.h"
 #import "CCAnimationManager.h"
-#import "numberOne.h"
+//#import "numberOne.h"
 
 @implementation FakePhone
 {
@@ -35,7 +35,9 @@
     CCLabelTTF *_numberText;
     
     CCNode *_Pos1;
-    numberOne *_newOne;
+//    numberOne *_newOne;
+    
+//    CCSprite *_numberOne;
 }
 
 -(void) onEnter
@@ -79,10 +81,15 @@
 {
 
     
-    _newOne = (numberOne *)[CCBReader load:@"1num" owner: self];
-    _newOne.positionType = CCPositionTypeNormalized;
-    _newOne.position = _Pos1.position;
-    [self addChild:_newOne];
+//    _newOne = (numberOne *)[CCBReader load:@"1num" owner: self];
+//    _newOne.positionType = CCPositionTypeNormalized;
+//    _newOne.position = _Pos1.position;
+//    [self addChild:_newOne];
+    
+    CCSprite *_numberOne = (CCSprite *) [CCBReader load:@"1num" owner:self];
+    _numberOne.positionType = CCPositionTypeNormalized;
+    _numberOne.position = _Pos1.position;
+    [self addChild:_numberOne];
 
 }
 
