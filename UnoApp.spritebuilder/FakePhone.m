@@ -30,7 +30,11 @@
     UnoColor *_color9;
     
     NSArray *_phonenumber;
-      UIButton *_back;
+    UIButton *_back;
+    CCLabelTTF *_numberText;
+    
+    CCNode *_Pos1;
+    CCSprite *_number1;
 }
 
 -(void) onEnter
@@ -72,7 +76,12 @@
 }
 -(void) press1
 {
+    _number1.positionType = CCPositionTypeNormalized;
 
+    _number1.position = _Pos1.position;
+    
+    _number1.visible=YES;
+   
 }
 
 -(void) press2

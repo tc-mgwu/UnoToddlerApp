@@ -405,8 +405,8 @@
             if (CGRectContainsRect(_currentTriangle.boundingBox, _triHole.boundingBox))
             {
                 CCLOG(@"Correct");
-                _currentTriangle.visible=NO;
-                
+//                _currentTriangle.visible=NO;
+                [_currentTriangle removeFromParent];
 //                CCParticleSystem *particle1 = (CCParticleSystem *)[CCBReader load:@"Particle1"];
 //                particle1.autoRemoveOnFinish = TRUE;
 //                particle1.positionInPoints = _currentTriangle.positionInPoints;
@@ -421,8 +421,8 @@
         if (CGRectContainsRect(_squareHole.boundingBox, _currentSquare.boundingBox))
         {
             CCLOG(@"Correct");
-            _currentSquare.visible=NO;
-            
+//            _currentSquare.visible=NO;
+            [_currentSquare removeFromParent];
         }
     }
     
@@ -462,6 +462,8 @@
     }
 //    }
 
+    
+    
 }
 
 //shape spawners
