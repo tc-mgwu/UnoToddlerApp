@@ -30,11 +30,25 @@
     UnoColor *_color8;
     UnoColor *_color9;
     
-    NSArray *_phonenumber;
+    NSMutableArray *_phonenumber;
+    
+    NSArray *_numberPositions;
+    int i;
+    int count;
+    
     UIButton *_back;
     CCLabelTTF *_numberText;
     
     CCNode *_Pos1;
+    CCNode *_Pos2;
+    CCNode *_Pos3;
+    CCNode *_Pos4;
+    CCNode *_Pos5;
+    CCNode *_Pos6;
+    CCNode *_Pos7;
+    CCNode *_Pos8;
+    CCNode *_Pos9;
+
 //    numberOne *_newOne;
     
 //    CCSprite *_numberOne;
@@ -44,6 +58,11 @@
 {
 
     [super onEnter];
+    
+    _phonenumber = [NSMutableArray array];
+    
+   //initialize number position arrary with objects
+    _numberPositions = @[_Pos1, _Pos2, _Pos3, _Pos4, _Pos5, _Pos6, _Pos7, _Pos8, _Pos9];
     
     _currentColor=(UnoColor *)[CCBReader load:@"UnoColor" owner:self];
     _currentColor.positionType = CCPositionTypeNormalized;
@@ -76,6 +95,18 @@
     {
         //DISPLAY PRESS CALL!
     }
+    
+}
+
+-(void) update:(CCTime)delta{
+
+
+    count = [_numberPositions count];
+    
+    for (i=0; i < count; i++) {
+        NSLog(@"Position %i = %@", i, [_numberPositions objectAtIndex:i]);
+    }
+
 }
 -(void) press1
 {
@@ -90,17 +121,30 @@
     _numberOne.positionType = CCPositionTypeNormalized;
     _numberOne.position = _Pos1.position;
     [self addChild:_numberOne];
+    
+    count = [_numberPositions count];
+    
+    for (i=0; i < count; i++) {
+        NSLog(@"Position %i = %@", i, [_numberPositions objectAtIndex:i]);
+    }
 
 }
 
 -(void) press2
 {
-    
+    CCSprite *_numberTwo = (CCSprite *) [CCBReader load:@"2num" owner:self];
+    _numberTwo.positionType = CCPositionTypeNormalized;
+    _numberTwo.position = _Pos2.position;
+    [self addChild:_numberTwo];
     
 }
 
 -(void) press3
 {
+    CCSprite *_numberThree = (CCSprite *) [CCBReader load:@"3num" owner:self];
+    _numberThree.positionType = CCPositionTypeNormalized;
+    _numberThree.position = _Pos3.position;
+    [self addChild:_numberThree];
     
     
 }
@@ -108,14 +152,20 @@
 
 -(void) press4
 {
-    
+    CCSprite *_numberFour = (CCSprite *) [CCBReader load:@"4num" owner:self];
+    _numberFour.positionType = CCPositionTypeNormalized;
+    _numberFour.position = _Pos4.position;
+    [self addChild:_numberFour];
     
 }
 
 -(void) press5
 {
     
-    
+    CCSprite *_numberFive = (CCSprite *) [CCBReader load:@"5num" owner:self];
+    _numberFive.positionType = CCPositionTypeNormalized;
+    _numberFive.position = _Pos5.position;
+    [self addChild:_numberFive];
 }
 
 -(void) press6
