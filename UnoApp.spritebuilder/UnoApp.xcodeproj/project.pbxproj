@@ -10,26 +10,26 @@
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		A53C52FE1A8D54F600E3191B /* AnimalZoo.m in Sources */ = {isa = PBXBuildFile; fileRef = A53C52FD1A8D54F600E3191B /* AnimalZoo.m */; };
 		A55DB1181A5F36D60033B9C9 /* Shapes.m in Sources */ = {isa = PBXBuildFile; fileRef = A55DB1171A5F36D60033B9C9 /* Shapes.m */; };
-		A5609AB11ADF58DA00C9FDB1 /* Blue.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609A9D1ADF58DA00C9FDB1 /* Blue.caf */; };
-		A5609AB21ADF58DA00C9FDB1 /* ColorMatchInstructions.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609A9E1ADF58DA00C9FDB1 /* ColorMatchInstructions.caf */; };
-		A5609AB31ADF58DA00C9FDB1 /* Gray.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609A9F1ADF58DA00C9FDB1 /* Gray.caf */; };
-		A5609AB41ADF58DA00C9FDB1 /* Green.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AA01ADF58DA00C9FDB1 /* Green.caf */; };
-		A5609AB51ADF58DA00C9FDB1 /* Let'sGetStarted.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AA11ADF58DA00C9FDB1 /* Let'sGetStarted.caf */; };
-		A5609AB61ADF58DA00C9FDB1 /* Let'sGototheZoo.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AA21ADF58DA00C9FDB1 /* Let'sGototheZoo.caf */; };
-		A5609AB71ADF58DA00C9FDB1 /* Let'sMatchColors.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AA31ADF58DA00C9FDB1 /* Let'sMatchColors.caf */; };
-		A5609AB81ADF58DA00C9FDB1 /* Let'sPlayShapeMatch.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AA41ADF58DA00C9FDB1 /* Let'sPlayShapeMatch.caf */; };
-		A5609AB91ADF58DA00C9FDB1 /* MyNameisUno.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AA51ADF58DA00C9FDB1 /* MyNameisUno.caf */; };
-		A5609ABA1ADF58DA00C9FDB1 /* Orange.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AA61ADF58DA00C9FDB1 /* Orange.caf */; };
-		A5609ABB1ADF58DA00C9FDB1 /* Pink.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AA71ADF58DA00C9FDB1 /* Pink.caf */; };
-		A5609ABC1ADF58DA00C9FDB1 /* Purple.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AA81ADF58DA00C9FDB1 /* Purple.caf */; };
-		A5609ABD1ADF58DA00C9FDB1 /* Red.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AA91ADF58DA00C9FDB1 /* Red.caf */; };
-		A5609ABE1ADF58DA00C9FDB1 /* ShapeMatchInstructions.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AAA1ADF58DA00C9FDB1 /* ShapeMatchInstructions.caf */; };
-		A5609ABF1ADF58DA00C9FDB1 /* Teal.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AAB1ADF58DA00C9FDB1 /* Teal.caf */; };
-		A5609AC01ADF58DA00C9FDB1 /* That'sright.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AAC1ADF58DA00C9FDB1 /* That'sright.caf */; };
-		A5609AC11ADF58DA00C9FDB1 /* TryAgain.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AAD1ADF58DA00C9FDB1 /* TryAgain.caf */; };
-		A5609AC21ADF58DA00C9FDB1 /* Yay.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AAE1ADF58DA00C9FDB1 /* Yay.caf */; };
-		A5609AC31ADF58DA00C9FDB1 /* Yellow.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AAF1ADF58DA00C9FDB1 /* Yellow.caf */; };
-		A5609AC41ADF58DA00C9FDB1 /* ZooInstructions.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AB01ADF58DA00C9FDB1 /* ZooInstructions.caf */; };
+		A5609ADE1ADF5CCF00C9FDB1 /* Blue.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609ACA1ADF5CCF00C9FDB1 /* Blue.caf */; };
+		A5609ADF1ADF5CCF00C9FDB1 /* ColorMatchInstructions.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609ACB1ADF5CCF00C9FDB1 /* ColorMatchInstructions.caf */; };
+		A5609AE01ADF5CCF00C9FDB1 /* Gray.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609ACC1ADF5CCF00C9FDB1 /* Gray.caf */; };
+		A5609AE11ADF5CCF00C9FDB1 /* Green.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609ACD1ADF5CCF00C9FDB1 /* Green.caf */; };
+		A5609AE21ADF5CCF00C9FDB1 /* Let'sGetStarted.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609ACE1ADF5CCF00C9FDB1 /* Let'sGetStarted.caf */; };
+		A5609AE31ADF5CCF00C9FDB1 /* Let'sGototheZoo.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609ACF1ADF5CCF00C9FDB1 /* Let'sGototheZoo.caf */; };
+		A5609AE41ADF5CCF00C9FDB1 /* Let'sMatchColors.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AD01ADF5CCF00C9FDB1 /* Let'sMatchColors.caf */; };
+		A5609AE51ADF5CCF00C9FDB1 /* Let'sPlayShapeMatch.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AD11ADF5CCF00C9FDB1 /* Let'sPlayShapeMatch.caf */; };
+		A5609AE61ADF5CCF00C9FDB1 /* MyNameisUno.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AD21ADF5CCF00C9FDB1 /* MyNameisUno.caf */; };
+		A5609AE71ADF5CCF00C9FDB1 /* Orange.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AD31ADF5CCF00C9FDB1 /* Orange.caf */; };
+		A5609AE81ADF5CCF00C9FDB1 /* Pink.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AD41ADF5CCF00C9FDB1 /* Pink.caf */; };
+		A5609AE91ADF5CCF00C9FDB1 /* Purple.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AD51ADF5CCF00C9FDB1 /* Purple.caf */; };
+		A5609AEA1ADF5CCF00C9FDB1 /* Red.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AD61ADF5CCF00C9FDB1 /* Red.caf */; };
+		A5609AEB1ADF5CCF00C9FDB1 /* ShapeMatchInstructions.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AD71ADF5CCF00C9FDB1 /* ShapeMatchInstructions.caf */; };
+		A5609AEC1ADF5CCF00C9FDB1 /* Teal.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AD81ADF5CCF00C9FDB1 /* Teal.caf */; };
+		A5609AED1ADF5CCF00C9FDB1 /* That'sright.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609AD91ADF5CCF00C9FDB1 /* That'sright.caf */; };
+		A5609AEE1ADF5CCF00C9FDB1 /* TryAgain.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609ADA1ADF5CCF00C9FDB1 /* TryAgain.caf */; };
+		A5609AEF1ADF5CCF00C9FDB1 /* Yay.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609ADB1ADF5CCF00C9FDB1 /* Yay.caf */; };
+		A5609AF01ADF5CCF00C9FDB1 /* Yellow.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609ADC1ADF5CCF00C9FDB1 /* Yellow.caf */; };
+		A5609AF11ADF5CCF00C9FDB1 /* ZooInstructions.caf in Resources */ = {isa = PBXBuildFile; fileRef = A5609ADD1ADF5CCF00C9FDB1 /* ZooInstructions.caf */; };
 		A570183C1A9EA90100E059D7 /* Elephant.m in Sources */ = {isa = PBXBuildFile; fileRef = A570183B1A9EA90100E059D7 /* Elephant.m */; };
 		A58F88981A9D5095009154F1 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = A58F88971A9D5095009154F1 /* Circle.m */; };
 		A58F889F1A9D50CD009154F1 /* CircleHole.m in Sources */ = {isa = PBXBuildFile; fileRef = A58F889E1A9D50CD009154F1 /* CircleHole.m */; };
@@ -119,26 +119,26 @@
 		A53C52FD1A8D54F600E3191B /* AnimalZoo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimalZoo.m; sourceTree = "<group>"; };
 		A55DB1161A5F36D60033B9C9 /* Shapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shapes.h; sourceTree = "<group>"; };
 		A55DB1171A5F36D60033B9C9 /* Shapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shapes.m; sourceTree = "<group>"; };
-		A5609A9D1ADF58DA00C9FDB1 /* Blue.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Blue.caf; sourceTree = "<group>"; };
-		A5609A9E1ADF58DA00C9FDB1 /* ColorMatchInstructions.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ColorMatchInstructions.caf; sourceTree = "<group>"; };
-		A5609A9F1ADF58DA00C9FDB1 /* Gray.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gray.caf; sourceTree = "<group>"; };
-		A5609AA01ADF58DA00C9FDB1 /* Green.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Green.caf; sourceTree = "<group>"; };
-		A5609AA11ADF58DA00C9FDB1 /* Let'sGetStarted.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Let'sGetStarted.caf"; sourceTree = "<group>"; };
-		A5609AA21ADF58DA00C9FDB1 /* Let'sGototheZoo.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Let'sGototheZoo.caf"; sourceTree = "<group>"; };
-		A5609AA31ADF58DA00C9FDB1 /* Let'sMatchColors.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Let'sMatchColors.caf"; sourceTree = "<group>"; };
-		A5609AA41ADF58DA00C9FDB1 /* Let'sPlayShapeMatch.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Let'sPlayShapeMatch.caf"; sourceTree = "<group>"; };
-		A5609AA51ADF58DA00C9FDB1 /* MyNameisUno.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyNameisUno.caf; sourceTree = "<group>"; };
-		A5609AA61ADF58DA00C9FDB1 /* Orange.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Orange.caf; sourceTree = "<group>"; };
-		A5609AA71ADF58DA00C9FDB1 /* Pink.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pink.caf; sourceTree = "<group>"; };
-		A5609AA81ADF58DA00C9FDB1 /* Purple.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Purple.caf; sourceTree = "<group>"; };
-		A5609AA91ADF58DA00C9FDB1 /* Red.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Red.caf; sourceTree = "<group>"; };
-		A5609AAA1ADF58DA00C9FDB1 /* ShapeMatchInstructions.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShapeMatchInstructions.caf; sourceTree = "<group>"; };
-		A5609AAB1ADF58DA00C9FDB1 /* Teal.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Teal.caf; sourceTree = "<group>"; };
-		A5609AAC1ADF58DA00C9FDB1 /* That'sright.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "That'sright.caf"; sourceTree = "<group>"; };
-		A5609AAD1ADF58DA00C9FDB1 /* TryAgain.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TryAgain.caf; sourceTree = "<group>"; };
-		A5609AAE1ADF58DA00C9FDB1 /* Yay.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yay.caf; sourceTree = "<group>"; };
-		A5609AAF1ADF58DA00C9FDB1 /* Yellow.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yellow.caf; sourceTree = "<group>"; };
-		A5609AB01ADF58DA00C9FDB1 /* ZooInstructions.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ZooInstructions.caf; sourceTree = "<group>"; };
+		A5609ACA1ADF5CCF00C9FDB1 /* Blue.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Blue.caf; sourceTree = "<group>"; };
+		A5609ACB1ADF5CCF00C9FDB1 /* ColorMatchInstructions.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ColorMatchInstructions.caf; sourceTree = "<group>"; };
+		A5609ACC1ADF5CCF00C9FDB1 /* Gray.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gray.caf; sourceTree = "<group>"; };
+		A5609ACD1ADF5CCF00C9FDB1 /* Green.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Green.caf; sourceTree = "<group>"; };
+		A5609ACE1ADF5CCF00C9FDB1 /* Let'sGetStarted.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Let'sGetStarted.caf"; sourceTree = "<group>"; };
+		A5609ACF1ADF5CCF00C9FDB1 /* Let'sGototheZoo.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Let'sGototheZoo.caf"; sourceTree = "<group>"; };
+		A5609AD01ADF5CCF00C9FDB1 /* Let'sMatchColors.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Let'sMatchColors.caf"; sourceTree = "<group>"; };
+		A5609AD11ADF5CCF00C9FDB1 /* Let'sPlayShapeMatch.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Let'sPlayShapeMatch.caf"; sourceTree = "<group>"; };
+		A5609AD21ADF5CCF00C9FDB1 /* MyNameisUno.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyNameisUno.caf; sourceTree = "<group>"; };
+		A5609AD31ADF5CCF00C9FDB1 /* Orange.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Orange.caf; sourceTree = "<group>"; };
+		A5609AD41ADF5CCF00C9FDB1 /* Pink.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pink.caf; sourceTree = "<group>"; };
+		A5609AD51ADF5CCF00C9FDB1 /* Purple.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Purple.caf; sourceTree = "<group>"; };
+		A5609AD61ADF5CCF00C9FDB1 /* Red.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Red.caf; sourceTree = "<group>"; };
+		A5609AD71ADF5CCF00C9FDB1 /* ShapeMatchInstructions.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShapeMatchInstructions.caf; sourceTree = "<group>"; };
+		A5609AD81ADF5CCF00C9FDB1 /* Teal.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Teal.caf; sourceTree = "<group>"; };
+		A5609AD91ADF5CCF00C9FDB1 /* That'sright.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "That'sright.caf"; sourceTree = "<group>"; };
+		A5609ADA1ADF5CCF00C9FDB1 /* TryAgain.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TryAgain.caf; sourceTree = "<group>"; };
+		A5609ADB1ADF5CCF00C9FDB1 /* Yay.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yay.caf; sourceTree = "<group>"; };
+		A5609ADC1ADF5CCF00C9FDB1 /* Yellow.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Yellow.caf; sourceTree = "<group>"; };
+		A5609ADD1ADF5CCF00C9FDB1 /* ZooInstructions.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ZooInstructions.caf; sourceTree = "<group>"; };
 		A570183A1A9EA90100E059D7 /* Elephant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Elephant.h; sourceTree = "<group>"; };
 		A570183B1A9EA90100E059D7 /* Elephant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Elephant.m; sourceTree = "<group>"; };
 		A58F88961A9D5095009154F1 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
@@ -234,29 +234,29 @@
 			name = libs;
 			sourceTree = "<group>";
 		};
-		A5609A9C1ADF58DA00C9FDB1 /* Audio */ = {
+		A5609AC91ADF5CCF00C9FDB1 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
-				A5609A9D1ADF58DA00C9FDB1 /* Blue.caf */,
-				A5609A9E1ADF58DA00C9FDB1 /* ColorMatchInstructions.caf */,
-				A5609A9F1ADF58DA00C9FDB1 /* Gray.caf */,
-				A5609AA01ADF58DA00C9FDB1 /* Green.caf */,
-				A5609AA11ADF58DA00C9FDB1 /* Let'sGetStarted.caf */,
-				A5609AA21ADF58DA00C9FDB1 /* Let'sGototheZoo.caf */,
-				A5609AA31ADF58DA00C9FDB1 /* Let'sMatchColors.caf */,
-				A5609AA41ADF58DA00C9FDB1 /* Let'sPlayShapeMatch.caf */,
-				A5609AA51ADF58DA00C9FDB1 /* MyNameisUno.caf */,
-				A5609AA61ADF58DA00C9FDB1 /* Orange.caf */,
-				A5609AA71ADF58DA00C9FDB1 /* Pink.caf */,
-				A5609AA81ADF58DA00C9FDB1 /* Purple.caf */,
-				A5609AA91ADF58DA00C9FDB1 /* Red.caf */,
-				A5609AAA1ADF58DA00C9FDB1 /* ShapeMatchInstructions.caf */,
-				A5609AAB1ADF58DA00C9FDB1 /* Teal.caf */,
-				A5609AAC1ADF58DA00C9FDB1 /* That'sright.caf */,
-				A5609AAD1ADF58DA00C9FDB1 /* TryAgain.caf */,
-				A5609AAE1ADF58DA00C9FDB1 /* Yay.caf */,
-				A5609AAF1ADF58DA00C9FDB1 /* Yellow.caf */,
-				A5609AB01ADF58DA00C9FDB1 /* ZooInstructions.caf */,
+				A5609ACA1ADF5CCF00C9FDB1 /* Blue.caf */,
+				A5609ACB1ADF5CCF00C9FDB1 /* ColorMatchInstructions.caf */,
+				A5609ACC1ADF5CCF00C9FDB1 /* Gray.caf */,
+				A5609ACD1ADF5CCF00C9FDB1 /* Green.caf */,
+				A5609ACE1ADF5CCF00C9FDB1 /* Let'sGetStarted.caf */,
+				A5609ACF1ADF5CCF00C9FDB1 /* Let'sGototheZoo.caf */,
+				A5609AD01ADF5CCF00C9FDB1 /* Let'sMatchColors.caf */,
+				A5609AD11ADF5CCF00C9FDB1 /* Let'sPlayShapeMatch.caf */,
+				A5609AD21ADF5CCF00C9FDB1 /* MyNameisUno.caf */,
+				A5609AD31ADF5CCF00C9FDB1 /* Orange.caf */,
+				A5609AD41ADF5CCF00C9FDB1 /* Pink.caf */,
+				A5609AD51ADF5CCF00C9FDB1 /* Purple.caf */,
+				A5609AD61ADF5CCF00C9FDB1 /* Red.caf */,
+				A5609AD71ADF5CCF00C9FDB1 /* ShapeMatchInstructions.caf */,
+				A5609AD81ADF5CCF00C9FDB1 /* Teal.caf */,
+				A5609AD91ADF5CCF00C9FDB1 /* That'sright.caf */,
+				A5609ADA1ADF5CCF00C9FDB1 /* TryAgain.caf */,
+				A5609ADB1ADF5CCF00C9FDB1 /* Yay.caf */,
+				A5609ADC1ADF5CCF00C9FDB1 /* Yellow.caf */,
+				A5609ADD1ADF5CCF00C9FDB1 /* ZooInstructions.caf */,
 			);
 			name = Audio;
 			path = Source/Audio;
@@ -292,7 +292,7 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				A5609A9C1ADF58DA00C9FDB1 /* Audio */,
+				A5609AC91ADF5CCF00C9FDB1 /* Audio */,
 				A58F88AC1A9D5180009154F1 /* ShapeSorter */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
@@ -506,39 +506,39 @@
 			buildActionMask = 2147483647;
 			files = (
 				B71F5919188484E7003F4D28 /* Settings.png in Resources */,
-				A5609AC01ADF58DA00C9FDB1 /* That'sright.caf in Resources */,
+				A5609AED1ADF5CCF00C9FDB1 /* That'sright.caf in Resources */,
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
-				A5609AC11ADF58DA00C9FDB1 /* TryAgain.caf in Resources */,
-				A5609ABD1ADF58DA00C9FDB1 /* Red.caf in Resources */,
+				A5609AEE1ADF5CCF00C9FDB1 /* TryAgain.caf in Resources */,
+				A5609AEA1ADF5CCF00C9FDB1 /* Red.caf in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
-				A5609ABF1ADF58DA00C9FDB1 /* Teal.caf in Resources */,
-				A5609AB61ADF58DA00C9FDB1 /* Let'sGototheZoo.caf in Resources */,
-				A5609ABE1ADF58DA00C9FDB1 /* ShapeMatchInstructions.caf in Resources */,
-				A5609AB91ADF58DA00C9FDB1 /* MyNameisUno.caf in Resources */,
-				A5609AB71ADF58DA00C9FDB1 /* Let'sMatchColors.caf in Resources */,
+				A5609AEC1ADF5CCF00C9FDB1 /* Teal.caf in Resources */,
+				A5609AE31ADF5CCF00C9FDB1 /* Let'sGototheZoo.caf in Resources */,
+				A5609AEB1ADF5CCF00C9FDB1 /* ShapeMatchInstructions.caf in Resources */,
+				A5609AE61ADF5CCF00C9FDB1 /* MyNameisUno.caf in Resources */,
+				A5609AE41ADF5CCF00C9FDB1 /* Let'sMatchColors.caf in Resources */,
 				B71F5913188484E7003F4D28 /* iPad.png in Resources */,
-				A5609AC21ADF58DA00C9FDB1 /* Yay.caf in Resources */,
+				A5609AEF1ADF5CCF00C9FDB1 /* Yay.caf in Resources */,
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
-				A5609AB81ADF58DA00C9FDB1 /* Let'sPlayShapeMatch.caf in Resources */,
-				A5609AB31ADF58DA00C9FDB1 /* Gray.caf in Resources */,
-				A5609AB41ADF58DA00C9FDB1 /* Green.caf in Resources */,
+				A5609AE01ADF5CCF00C9FDB1 /* Gray.caf in Resources */,
+				A5609AE11ADF5CCF00C9FDB1 /* Green.caf in Resources */,
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
-				A5609AB11ADF58DA00C9FDB1 /* Blue.caf in Resources */,
+				A5609ADE1ADF5CCF00C9FDB1 /* Blue.caf in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
-				A5609AB51ADF58DA00C9FDB1 /* Let'sGetStarted.caf in Resources */,
+				A5609AE21ADF5CCF00C9FDB1 /* Let'sGetStarted.caf in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
-				A5609AB21ADF58DA00C9FDB1 /* ColorMatchInstructions.caf in Resources */,
-				A5609ABA1ADF58DA00C9FDB1 /* Orange.caf in Resources */,
+				A5609ADF1ADF5CCF00C9FDB1 /* ColorMatchInstructions.caf in Resources */,
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
+				A5609AE71ADF5CCF00C9FDB1 /* Orange.caf in Resources */,
+				A5609AE51ADF5CCF00C9FDB1 /* Let'sPlayShapeMatch.caf in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
-				A5609AC31ADF58DA00C9FDB1 /* Yellow.caf in Resources */,
-				A5609AC41ADF58DA00C9FDB1 /* ZooInstructions.caf in Resources */,
-				A5609ABB1ADF58DA00C9FDB1 /* Pink.caf in Resources */,
-				A5609ABC1ADF58DA00C9FDB1 /* Purple.caf in Resources */,
+				A5609AF01ADF5CCF00C9FDB1 /* Yellow.caf in Resources */,
+				A5609AF11ADF5CCF00C9FDB1 /* ZooInstructions.caf in Resources */,
+				A5609AE81ADF5CCF00C9FDB1 /* Pink.caf in Resources */,
+				A5609AE91ADF5CCF00C9FDB1 /* Purple.caf in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
