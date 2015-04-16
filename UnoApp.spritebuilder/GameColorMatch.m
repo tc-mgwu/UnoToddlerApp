@@ -71,9 +71,9 @@
     _allColors= @[_color1,_color2,_color3,_color4,_color5,_color6,_color7,_color8,_color9];
    
     AudioPlayer = [OALSimpleAudio sharedInstance];
-    [AudioPlayer preloadEffect:@"Published-iOS/Audio/thatsright.caf"];
+    [AudioPlayer preloadEffect:@"Source/Audio/That'sright.caf"];
 
-    
+    [self changeColor];
 
 }
 
@@ -300,7 +300,7 @@
     {
         CCLOG(@"Green~Correct!");
         
-        [AudioPlayer playEffect:@"Published-iOS/Audio/Green.caf"];
+        [AudioPlayer playEffect:@"Audio/Green.caf"];
         [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
         float delay = 1;
         [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
@@ -322,7 +322,7 @@
     {
         CCLOG(@"Magenta~Correct!");
         
-        [AudioPlayer playEffect:@"Published-iOS/Audio/Magenta.caf"];
+        [AudioPlayer playEffect:@"Magenta.caf"];
         [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
         float delay = 1;
         [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
@@ -342,7 +342,7 @@
     {
         CCLOG(@"Purple, correct!");
         
-        [AudioPlayer playEffect:@"Published-iOS/Audio/Purple.caf"];
+        [AudioPlayer playEffect:@"Audio/Purple.caf"];
         [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
         float delay = 1;
         [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
@@ -361,7 +361,7 @@
     {
         CCLOG(@"blue, correct!");
         
-        [AudioPlayer playEffect:@"Published-iOS/Audio/Blue.caf"];
+        [AudioPlayer playEffect:@"Audio/Blue.caf"];
         [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
         float delay = 1;
         [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];
@@ -398,7 +398,7 @@
     {
         CCLOG(@"red, correct!");
         
-        [AudioPlayer playEffect:@"Published-iOS/Audio/Red.caf"];
+        [AudioPlayer playEffect:@"Audio/Red.caf"];
         [_currentFace.animationManager runAnimationsForSequenceNamed:@"Cheer"];
         float delay = 1;
         [self performSelector:@selector(changeColor) withObject:nil afterDelay:delay];

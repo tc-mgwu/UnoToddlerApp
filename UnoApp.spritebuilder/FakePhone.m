@@ -30,9 +30,9 @@
     UnoColor *_color8;
     UnoColor *_color9;
     
-    NSMutableArray *_phonenumber;
-    
+    NSMutableArray *_phoneNumEnter;
     NSArray *_numberPositions;
+   
     int i;
     int count;
     
@@ -59,7 +59,7 @@
 
     [super onEnter];
     
-    _phonenumber = [NSMutableArray array];
+    _phoneNumEnter = [NSMutableArray array];
     
    //initialize number position arrary with objects
     _numberPositions = @[_Pos1, _Pos2, _Pos3, _Pos4, _Pos5, _Pos6, _Pos7, _Pos8, _Pos9];
@@ -91,7 +91,7 @@
 
 -(void) storePhoneNumber
 {
-    if ([_phonenumber count]> 9 )
+    if ([_phoneNumEnter count]> 9 )
     {
         //DISPLAY PRESS CALL!
     }
@@ -101,11 +101,12 @@
 -(void) update:(CCTime)delta{
 
 
-    count = [_numberPositions count];
-    
-    for (i=0; i < count; i++) {
-        NSLog(@"Position %i = %@", i, [_numberPositions objectAtIndex:i]);
-    }
+//    count = [_numberPositions count];
+//    
+//    for (i=0; i < count; i++) {
+//        NSLog(@"Position %i = %@", i, [_numberPositions objectAtIndex:i]);
+//        //set button to position 1
+//    }
 
 }
 -(void) press1
@@ -119,15 +120,16 @@
     
     CCSprite *_numberOne = (CCSprite *) [CCBReader load:@"1num" owner:self];
     _numberOne.positionType = CCPositionTypeNormalized;
-    _numberOne.position = _Pos1.position;
-    [self addChild:_numberOne];
+//    _numberOne.position = _Pos1.position;
+   
     
     count = [_numberPositions count];
     
     for (i=0; i < count; i++) {
-        NSLog(@"Position %i = %@", i, [_numberPositions objectAtIndex:i]);
+        _numberOne.position = (((CCNode *)_numberPositions).position);
     }
 
+     [self addChild:_numberOne];
 }
 
 -(void) press2

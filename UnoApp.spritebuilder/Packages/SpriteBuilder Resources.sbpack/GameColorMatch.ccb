@@ -2122,7 +2122,7 @@
 						<key>displayName</key>
 						<string>CCButton-7</string>
 						<key>memberVarAssignmentName</key>
-						<string>_back</string>
+						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -2180,7 +2180,7 @@
 								<string>Block</string>
 								<key>value</key>
 								<array>
-									<string>back</string>
+									<string>press7</string>
 									<integer>1</integer>
 								</array>
 							</dict>
@@ -2435,6 +2435,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -3506,8 +3508,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
