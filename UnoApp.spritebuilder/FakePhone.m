@@ -15,8 +15,10 @@
 
 @implementation FakePhone
 {
+    //yeah! content node! for things.
     CCNode *_contentNode;
-
+    
+    //ignore this stuff- just face and face color nodes
     UnoFace *_currentFace;
     UnoColor *_currentColor;
     UnoColor *_color0;
@@ -30,15 +32,23 @@
     UnoColor *_color8;
     UnoColor *_color9;
     
+    //mutable array to store numbers entered
     NSMutableArray *_phoneNumEnter;
+    
+    //array to store positions (there are 9 positions that the numbers can show up at)
     NSArray *_numberPositions;
    
+    //other array crap.
     int i;
     int count;
     
+    //back to menu
     UIButton *_back;
+    
+    //at first, I was going to have a textual representation of the numbers, but have decided to use sprites to show the numbers so I have more control over the visuals.
     CCLabelTTF *_numberText;
     
+    //nodes for positioning reference
     CCNode *_Pos1;
     CCNode *_Pos2;
     CCNode *_Pos3;
@@ -49,9 +59,9 @@
     CCNode *_Pos8;
     CCNode *_Pos9;
 
-//    numberOne *_newOne;
+//    numberOne *_newOne; lols. another method I tried was to spawn the numbers using their own classes, but that was stupid.
     
-//    CCSprite *_numberOne;
+//    CCSprite *_numberOne; ignore
 }
 
 -(void) onEnter
@@ -59,20 +69,25 @@
 
     [super onEnter];
     
+    //initiate this array!
     _phoneNumEnter = [NSMutableArray array];
     
-   //initialize number position arrary with objects
+   //initialize number position array with ccnode positions
     _numberPositions = @[_Pos1, _Pos2, _Pos3, _Pos4, _Pos5, _Pos6, _Pos7, _Pos8, _Pos9];
     
+   //more crap to ignore- this is just the face and face position
     _currentColor=(UnoColor *)[CCBReader load:@"UnoColor" owner:self];
     _currentColor.positionType = CCPositionTypeNormalized;
     
+    //face color node
     _currentColor.position = ccp(0.5, .8);
     [self addChild:_currentColor];
     
+    //load face
     _currentFace =(UnoFace *) [CCBReader load:@"UnoFace" owner: self];
     _currentFace.positionType = CCPositionTypeNormalized;
     
+    //position face and load neutral face color
     _currentFace.position = _currentColor.position;
     [self addChild:_currentFace];
     _color0.visible=YES;
@@ -91,9 +106,10 @@
 
 -(void) storePhoneNumber
 {
+    //check to see if the number entered is greater than 9
     if ([_phoneNumEnter count]> 9 )
     {
-        //DISPLAY PRESS CALL!
+        //DISPLAY PRESS CALL BUTTON! Haven't gotten this far yet.
     }
     
 }
@@ -101,30 +117,17 @@
 -(void) update:(CCTime)delta{
 
 
-//    count = [_numberPositions count];
-//    
-//    for (i=0; i < count; i++) {
-//        NSLog(@"Position %i = %@", i, [_numberPositions objectAtIndex:i]);
-//        //set button to position 1
-//    }
-
 }
 -(void) press1
 {
-
-    
-//    _newOne = (numberOne *)[CCBReader load:@"1num" owner: self];
-//    _newOne.positionType = CCPositionTypeNormalized;
-//    _newOne.position = _Pos1.position;
-//    [self addChild:_newOne];
-    
+    //if the button 1 is pressed, load the number 1 sprite and set position to normalized
     CCSprite *_numberOne = (CCSprite *) [CCBReader load:@"1num" owner:self];
     _numberOne.positionType = CCPositionTypeNormalized;
-//    _numberOne.position = _Pos1.position;
    
-    
+    //then count the positions in the position array
     count = [_numberPositions count];
     
+    //position the sprite at the right ccnode within the positions array
     for (i=0; i < count; i++) {
         _numberOne.position = (((CCNode *)_numberPositions).position);
     }
@@ -134,6 +137,7 @@
 
 -(void) press2
 {
+    //do the same as (void) press1
     CCSprite *_numberTwo = (CCSprite *) [CCBReader load:@"2num" owner:self];
     _numberTwo.positionType = CCPositionTypeNormalized;
     _numberTwo.position = _Pos2.position;
@@ -143,6 +147,7 @@
 
 -(void) press3
 {
+     //do the same as (void) press1
     CCSprite *_numberThree = (CCSprite *) [CCBReader load:@"3num" owner:self];
     _numberThree.positionType = CCPositionTypeNormalized;
     _numberThree.position = _Pos3.position;
@@ -154,6 +159,7 @@
 
 -(void) press4
 {
+     //do the same as (void) press1
     CCSprite *_numberFour = (CCSprite *) [CCBReader load:@"4num" owner:self];
     _numberFour.positionType = CCPositionTypeNormalized;
     _numberFour.position = _Pos4.position;
@@ -172,7 +178,7 @@
 
 -(void) press6
 {
-    
+    //only have sprites up to 5 to see if I can get the array thing working
     
 }
 
@@ -197,7 +203,7 @@
 
 -(void) back
 {
-    
+    //back button just goes back to main menu
     CCScene *main = [CCBReader loadAsScene:@"MainScene"];
     CCTransition *transition = [CCTransition transitionFadeWithDuration:0.8f];
     [[CCDirector sharedDirector] presentScene:main withTransition:transition];
